@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
+* {
+  letter-spacing: 0.05em;
+}
+
 html,
 body,
 #__next {
@@ -43,10 +47,46 @@ body {
   background-image: url("../public/marketing.webp");
 }
 
+.custom-solutions-div {
+  background-image: url("../public/CustomDataSolutionBanner.webp");
+}
+
+.transport-operations-div {
+  background-image: url("../public/TransportOperationsBanner.webp");
+}
+
+.agency-operations-div {
+  background-image: url("../public/AgencyOperationsBanner.webp");
+}
+
+.prm-div {
+  background-image: url("../public/PRMBanner.webp");
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .marketing-div {
     background-image: url("../public/marketing_mobile.webp");
+    width: 100vw;
+  }
+
+  .custom-solutions-div {
+    background-image: url("../public/CustomDataSolutionMobileBanner.webp");
+    width: 100vw;
+  }
+
+  .transport-operations-div {
+    background-image: url("../public/TransportOperationsMobileBanner.webp");
+    width: 100vw;
+  }
+
+  .agency-operations-div {
+    background-image: url("../public/AgencyOperationsMobileBanner.webp");
+    width: 100vw;
+  }
+
+  .prm-div {
+    background-image: url("../public/PRMMobileBanner.webp");
     width: 100vw;
   }
 }

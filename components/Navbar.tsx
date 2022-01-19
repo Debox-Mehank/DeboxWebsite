@@ -4,11 +4,24 @@ import Image from "next/image";
 import Link from "next/link";
 import NavItem from "./reusable/NavItem";
 import Logo from "../assets/deboxlogo.png";
+import Router from "next/router";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const doMagic = () => {
+      setIsOpen(false);
+    };
+
+    Router.events.on("routeChangeStart", doMagic); // add listener
+
+    return () => {
+      Router.events.off("routeChangeStart", doMagic); // remove listener
+    };
+  }, []);
 
   useEffect(() => {
     const scrollHandler = () => {
@@ -32,8 +45,7 @@ const Navbar = () => {
       className={`flex justify-between items-center flex-wrap h-auto w-full z-10 fixed top-0 left-0 ${
         scrolled ? "p-1 shadow-md bg-white" : "p-2 bg-transparent"
       }`}
-      role="navigation"
-    >
+      role="navigation">
       <div className="hidden md:block lg:block">
         <Link href="/">
           <a className="items-center mx-3 inline-flex">
@@ -73,8 +85,8 @@ const Navbar = () => {
         />
         <NavItem
           title="Tech"
-          link="/tech"
-          active={router.pathname === "/tech"}
+          link="/custom-solutions"
+          active={router.pathname === "/custom-solutions"}
         />
         <NavItem
           title="Contact Us"
@@ -82,17 +94,49 @@ const Navbar = () => {
           active={router.pathname === "/contact"}
         />
       </ul>
+
+      <ul
+        id="mobile_nav"
+        className={`absolute ${isOpen ? "flex" : "hidden"} flex-col left-0 ${
+          scrolled ? "top-20" : "top-24"
+        } md:top-24 bg-white w-full lg:hidden shadow-md`}>
+        <NavItem title="Home" link="/" active={router.pathname === "/"} />
+        <hr className="ml-4 mr-8 my-2" />
+        <NavItem
+          title="Consulting"
+          link="/consulting"
+          active={router.pathname === "/consulting"}
+        />
+        <hr className="ml-4 mr-8 my-2" />
+        <NavItem
+          title="Marketing"
+          link="/marketing"
+          active={router.pathname === "/marketing"}
+        />
+        <hr className="ml-4 mr-8 my-2" />
+        <NavItem
+          title="Tech"
+          link="/custom-solutions"
+          active={router.pathname === "/custom-solutions"}
+        />
+        <hr className="ml-4 mr-8 my-2" />
+        <NavItem
+          title="Contact Us"
+          link="/contact"
+          active={router.pathname === "/contact"}
+        />
+      </ul>
+
       <button
+        onClick={() => setIsOpen((prev) => !isOpen)}
         className="inline-flex p-3 lg:hidden text-black ml-auto"
-        aria-label="Menu Mobile Button"
-      >
+        aria-label="Menu Mobile Button">
         <svg
           className="w-6 h-6"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
