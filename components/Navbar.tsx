@@ -83,11 +83,42 @@ const Navbar = () => {
           link="/marketing"
           active={router.pathname === "/marketing"}
         />
-        <NavItem
-          title="Tech"
-          link="/custom-solutions"
-          active={router.pathname === "/custom-solutions"}
-        />
+        <div className="inline-block relative has_dropdown">
+          <NavItem
+            title="Tech"
+            link="/custom-solutions"
+            active={
+              router.pathname === "/custom-solutions" ||
+              router.pathname === "/transport-operations" ||
+              router.pathname === "/performance-review-management" ||
+              router.pathname === "/agency-operations"
+            }
+          />
+          <div className="absolute right-0 top-12 dropdown opacity-0 invisible translate-y-8">
+            <ul className="bg-white shadow-md border-collapse border-gray-400 w-72 flex justify-evenly items-center flex-col">
+              <Link href="/transport-operations">
+                <li className="p-3 text-sm border border-collapse border-gray-400 w-full hover:bg-greyButtonBg cursor-pointer">
+                  Transport Operations
+                </li>
+              </Link>
+              <Link href="/agency-operations">
+                <li className="p-3 text-sm border border-collapse border-gray-400 w-full hover:bg-greyButtonBg cursor-pointer">
+                  Agency Operations
+                </li>
+              </Link>
+              <Link href="/performance-review-management">
+                <li className="whitespace-pre-line p-3 text-sm border border-collapse border-gray-400 w-full hover:bg-greyButtonBg cursor-pointer">
+                  Performance Review{"\n"}Management
+                </li>
+              </Link>
+              <Link href="/custom-solutions">
+                <li className="p-3 text-sm border border-collapse border-gray-400 w-full hover:bg-greyButtonBg cursor-pointer">
+                  Custom Solutions
+                </li>
+              </Link>
+            </ul>
+          </div>
+        </div>
         <NavItem
           title="Contact Us"
           link="/contact"
@@ -97,7 +128,7 @@ const Navbar = () => {
 
       <ul
         id="mobile_nav"
-        className={`absolute ${isOpen ? "flex" : "hidden"} flex-col left-0 ${
+        className={`absolute ${isOpen ? "flex" : "hidden"} flex-col ${
           scrolled ? "top-20" : "top-24"
         } md:top-24 bg-white w-full lg:hidden shadow-md`}>
         <NavItem title="Home" link="/" active={router.pathname === "/"} />
