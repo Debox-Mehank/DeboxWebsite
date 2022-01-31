@@ -10,9 +10,8 @@ const EssentialButton = ({ title, onClick, active }: EssentialButtonProps) => {
   return (
     <div
       onClick={onClick}
-      className={`text-white text-center font-semibold text-xs shadow-md cursor-pointer rounded-sm py-1.5 px-3 mt-3 lg:py-2 ${
-        active ? "bg-primary" : "bg-essentialBtn"
-      }`}
+      className={`text-white text-center font-semibold text-sm shadow-md cursor-pointer rounded-sm py-1.5 px-3 mt-3 lg:py-3 ${active ? "bg-primary" : "bg-essentialBtn"
+        }`}
     >
       {title}
     </div>

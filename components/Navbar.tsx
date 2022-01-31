@@ -42,9 +42,8 @@ const Navbar = () => {
   return (
     <nav
       style={{ transition: "0.2s" }}
-      className={`flex justify-between items-center flex-wrap h-auto w-full z-10 fixed top-0 left-0 ${
-        scrolled ? "p-1 shadow-md bg-white" : "p-2 bg-transparent"
-      }`}
+      className={`flex justify-between items-center flex-wrap h-auto w-full z-10 fixed top-0 left-0 ${scrolled ? "p-1 shadow-md bg-white" : "p-2 bg-transparent"
+        }`}
       role="navigation">
       <div className="hidden md:block lg:block">
         <Link href="/">
@@ -128,9 +127,8 @@ const Navbar = () => {
 
       <ul
         id="mobile_nav"
-        className={`absolute ${isOpen ? "flex" : "hidden"} flex-col ${
-          scrolled ? "top-20" : "top-24"
-        } md:top-24 bg-white w-full lg:hidden shadow-md`}>
+        className={`absolute ${isOpen ? "flex" : "hidden"} flex-col ${scrolled ? "top-20" : "top-24"
+          } md:top-24 bg-white w-full lg:hidden shadow-md left-0 pt-2`}>
         <NavItem title="Home" link="/" active={router.pathname === "/"} />
         <hr className="ml-4 mr-8 my-2" />
         <NavItem

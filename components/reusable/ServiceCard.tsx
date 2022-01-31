@@ -21,7 +21,7 @@ const ServiceCard = ({ img, title, content, link }: ServiceCardProps) => {
       <h4 className="font-medium text-xl text-center tracking-widest">
         {title}
       </h4>
-      <p className="font-light text-sm xl:text-base text-center">{content}</p>
+      <p className="font-light text-sm text-center">{content}</p>
       <OutlineButton title={"Know More"} link={link} />
     </div>
   );

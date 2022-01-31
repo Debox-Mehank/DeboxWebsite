@@ -8,7 +8,7 @@ import Slider from "../components/Slider";
 
 const Home: NextPage = () => {
   return (
-    <div className="mt-16">
+    <div className="mt-16 tracking-widest">
       <Slider />
       <QuoteBanner
         content={
