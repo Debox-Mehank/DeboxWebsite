@@ -40,7 +40,7 @@ const TestimonialCard = ({
         <div className="flex items-center max-w-5xl mx-auto">
           <div className="bg-white py-8 pl-8 pr-14 shadow-md rounded-md">
             <h4 className="font-bold text-xl">{name}</h4>
-            <p className="font-normal text-base text-gray-400">{designation}</p>
+            <p className="font-normal text-base text-gray-400 whitespace-pre-line">{designation}</p>
             <br />
             <div className="w-full">
               <Image

@@ -27,7 +27,7 @@ const data: SliderData[] = [
 const Slider = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="w-full flex justify-center items-center flex-col text-center font-bold p-4 md:px-18 lg:px-24 relative">
+    <div className="w-full flex justify-center items-center flex-col text-center font-bold p-4 md:px-36 lg:px-40 xl:px-48 relative">
       {data.map((slide, idx) => {
         return (
           <SliderItem

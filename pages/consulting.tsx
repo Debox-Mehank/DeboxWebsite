@@ -90,14 +90,14 @@ const teams_data: TeamCardProps[] = [
     email: "jayesh@debox.co.in",
     linkedin: "https://www.linkedin.com/in/jayesh-sirnani-53518858/",
   },
-  {
-    image: PrateekBucha,
-    name: "Prateek Bucha",
-    designation: "Vertical Leader - Risk Advisory",
-    desc: "He is a qualified Chartered Accountant (CA) with more than 10 years of industry experience with specialized focus in 'Risk Advisory Services'. His core competencies are Cost / Process Optimization Reviews, Business Process Reviews (Risk based Internal Audit), development of SOPs (Standard Operating Policies) and IFC / ICFR designing and testing reviews.\n\nHe has worked with BDO India LLP (World's 5th largest accounting firm) and Mahajan & Aibara LLP (Firm specialized in risk based internal audits). He has provided Risk Advisory Services to several large corporates in FMCG, manufacturing, hospitality, and healthcare sectors. He has also supported E-commerce start-ups in designing and implementing processes by recommending best practices.",
-    email: "prateek@debox.co.in",
-    linkedin: "https://www.linkedin.com/in/prateek-bucha-0481667a/",
-  },
+  // {
+  //   image: PrateekBucha,
+  //   name: "Prateek Bucha",
+  //   designation: "Vertical Leader - Risk Advisory",
+  //   desc: "He is a qualified Chartered Accountant (CA) with more than 10 years of industry experience with specialized focus in 'Risk Advisory Services'. His core competencies are Cost / Process Optimization Reviews, Business Process Reviews (Risk based Internal Audit), development of SOPs (Standard Operating Policies) and IFC / ICFR designing and testing reviews.\n\nHe has worked with BDO India LLP (World's 5th largest accounting firm) and Mahajan & Aibara LLP (Firm specialized in risk based internal audits). He has provided Risk Advisory Services to several large corporates in FMCG, manufacturing, hospitality, and healthcare sectors. He has also supported E-commerce start-ups in designing and implementing processes by recommending best practices.",
+  //   email: "prateek@debox.co.in",
+  //   linkedin: "https://www.linkedin.com/in/prateek-bucha-0481667a/",
+  // },
 ];
 
 const Consulting: NextPage = () => {
