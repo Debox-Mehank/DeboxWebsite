@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <nav
       style={{ transition: "0.2s" }}
-      className={`flex justify-between items-center flex-wrap h-auto w-full z-10 fixed top-0 left-0 ${scrolled ? "p-1 shadow-md bg-white" : "p-2 bg-transparent"
+      className={`flex justify-between items-center flex-wrap h-auto w-full z-50 fixed top-0 left-0 ${scrolled ? "p-1 shadow-md bg-white" : "p-2 bg-transparent"
         }`}
       role="navigation">
       <div className="hidden md:block lg:block">

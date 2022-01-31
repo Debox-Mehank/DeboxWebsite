@@ -11,6 +11,9 @@ module.exports = {
         marketingBg: "#e0e0e0",
         greyButtonBg: "#afafaf",
       },
+      gridTemplateColumns: {
+        essential: "70% 30%"
+      }
     },
   },
   variants: {

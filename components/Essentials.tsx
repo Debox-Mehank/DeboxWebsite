@@ -65,10 +65,11 @@ const Essentials = () => {
 
   return (
     <div className="flex justify-center items-center flex-col gap-8 px-3 pt-5 m-2 xl:px-15 xl:py-8 xl:m-4 select-none">
-      <div className="absolute left-4">
+      <div className="absolute left-4 z-10">
         <div
           onClick={() => {
             if (swiper.activeIndex > 0) {
+              console.log("Clicked");
               swiper.slideTo(swiper.activeIndex - 1)
             }
           }}
@@ -90,7 +91,7 @@ const Essentials = () => {
           </svg>
         </div>
       </div>
-      <div className="absolute right-4">
+      <div className="absolute right-4 z-10">
         <div
           onClick={() => {
             if (swiper.activeIndex < 6) {
@@ -146,10 +147,10 @@ const Essentials = () => {
             return (
               <SwiperSlide key={idx}>
                 <div
-                  className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 md:gap-20 lg:gap-20 xl:gap-20 justify-center items-center`}
+                  className={`grid grid-cols-1 md:grid-cols-essential lg:grid-cols-essential xl:grid-cols-essential gap-10 px-4 md:px-32 lg:px-40 xl:px-48 py-10`}
                 >
                   <div
-                    className="flex-1 flex flex-col items-start"
+                    className="flex justify-center flex-col items-start"
                     style={{ animation: "fadeLeft .4s linear .4s backwards" }}
                   >
                     <h4 className="text-sm lg:hidden xl:hidden font-bold tracking-widest">
@@ -163,18 +164,18 @@ const Essentials = () => {
                     </p>
                   </div>
                   <div
-                    className="flex-1 text-right hidden md:block lg:block xl:block"
+                    className="justify-center items-center hidden md:flex lg:flex xl:flex"
                     style={{ animation: "fadeUp .4s" }}
                   >
                     <Image
                       src={essential.img}
                       alt={essential.title}
-                      width={400}
-                      height={400}
+                      width={300}
+                      height={300}
                     />
                   </div>
                   <div
-                    className="flex-1 text-center md:hidden lg:hidden xl:hidden"
+                    className="flex justify-center items-center md:hidden lg:hidden xl:hidden"
                     style={{ animation: "fadeUp .4s" }}
                   >
                     <Image
@@ -190,7 +191,7 @@ const Essentials = () => {
           })}
         </Swiper>
       </div>
-      {/* Indicators */}
+      {/* Indicators grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 md:gap-20 lg:gap-20 xl:gap-20 */}
       <div className="flex justify-center items-center flex-row space-x-1">
         {data.map((_, idx) => {
           return (
