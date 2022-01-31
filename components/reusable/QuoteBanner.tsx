@@ -10,7 +10,7 @@ interface QuoteBannerProps {
 const QuoteBanner = ({ content, author }: QuoteBannerProps) => {
   return (
     <div className="mt-12 md:8 lg:8 p-4 bg-primary w-full 2xl:p-8">
-      <h4 className="whitespace-pre-wrap text-center text-white text-sm md:text-lg lg:text-lg xl:text-xl font-normal tracking-widest">
+      <h4 className="whitespace-pre-wrap text-center text-white text-sm md:text-lg lg:text-lg xl:text-xl font-normal tracking-widest lg:px-20 xl:px-20">
         <FontAwesomeIcon
           icon={faQuoteLeft}
           className="text-white mr-4 mb-2"
@@ -19,7 +19,7 @@ const QuoteBanner = ({ content, author }: QuoteBannerProps) => {
         {content}
         <FontAwesomeIcon
           icon={faQuoteRight}
-          className="text-white ml-4"
+          className="text-white ml-4 lg:mb-2"
           size="lg"
         />
       </h4>
