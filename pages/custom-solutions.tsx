@@ -116,7 +116,7 @@ const CustomSolutionsPage = () => {
         <h4 className="pt-4 text-xl font-normal xl:text-3xl tracking-widest text-center">
           Our Process
         </h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full gap-16 md:px-16 lg:px-16 xl:px-16 text-center mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full gap-16 md:gap-28 lg:gap-32 xl:gap-32 md:px-32 lg:px-36 xl:px-40 text-center mt-20">
           {process_data.map((process, idx) => {
             return (
               <div key={idx} className="flex justify-center items-center">

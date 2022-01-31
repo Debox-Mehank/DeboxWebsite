@@ -104,7 +104,7 @@ const Marketing: NextPage = () => {
             "For a fast-growing business or brand finding the right marketing partner and managing multiple vendors can be time-consuming and chaotic. Basis of your marketing goals, we bring together the best in the industry to suit your requirements. We become your common thread to ensure there is a synergy amongst your vendors so the overall brand communication is in sync across all platforms.\n\nOur network has 22 Digital Media agencies impaneled across India, Singapore, Dubai, Canada, and the USA."
           }
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full gap-16 md:px-16 lg:px-16 xl:px-16 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full gap-16 md:gap-28 lg:gap-32 xl:gap-32 md:px-32 lg:px-36 xl:px-40 mt-20 text-center">
           {services_data.map((service, idx) => {
             return (
               <div key={idx} className="flex justify-center items-center">
