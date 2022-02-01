@@ -6,10 +6,21 @@ import {
 import Link from "next/link"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import React from "react";
+import { useRouter } from 'next/router'
+import React, { useEffect } from "react";
 import contactImage from "../assets/contact_us_image.jpg"
 
 const Contact = () => {
+  const router = useRouter();
+  const query = router.query
+
+  useEffect(() => {
+    console.log(query);
+    if (query && query.submit === "true") {
+      console.log("Form Submitted");
+    }
+  }, [query]);
+
   return (
     <div className="w-full mt-16">
       <div className="flex justify-center items-center flex-col px-3 py-5 mx-2 mt-2 xl:px-15 xl:py-8 xl:m-4 select-none">
@@ -21,8 +32,8 @@ const Contact = () => {
         <div className="w-full flex justify-center items-center">
           <Image src={contactImage} alt="Debox Consulting Contact Us" objectFit="cover" />
         </div>
-        <form name="contact" data-netlify={true} method="POST" className="w-full px-8 lg:px-20 xl:px-20 py-4 lg:py-0 xl:py-0 flex flex-col justify-center gap-6">
-          <input type="hidden" name="contact" value={"contact"} />
+        <form name="contact" data-netlify="true" action="/contact?submit=true" method="POST" className="w-full px-8 lg:px-20 xl:px-20 py-4 lg:py-0 xl:py-0 flex flex-col justify-center gap-6">
+          <input type="hidden" name="form-name" value="contact" />
           <p className="text-black font-semibold text-xs md:text-sm lg:text-sm xl:text-sm my-2">Fields marked with an <span className="text-red-800">*</span> are required.</p>
           <div className="flex flex-col gap-1">
             <label className="text-xs md:text-sm lg:text-sm xl:text-sm">What services are you looking for?<span className="text-red-800">*</span></label>
@@ -70,7 +81,7 @@ const Contact = () => {
             </div>
             <div className="flex flex-col gap-1">
               <label htmlFor="phone" className="text-xs md:text-sm lg:text-sm xl:text-sm">Mobile Number<span className="text-red-800">*</span></label>
-              <input required id="phone" name="phone" type="number" maxLength={10} max={10} className="bg-gray-100 p-2 rounded text-sm md:text-base lg:text-base xl:text-base" />
+              <input required id="phone" name="phone" type="number" maxLength={10} className="bg-gray-100 p-2 rounded text-sm md:text-base lg:text-base xl:text-base" />
             </div>
           </div>
           <div className="w-full">
