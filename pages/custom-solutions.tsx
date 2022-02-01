@@ -68,7 +68,7 @@ const CustomSolutionsPage = () => {
       {/* 4 grid section */}
       <div className="flex justify-center items-center flex-col gap-8 px-3 mt-2 xl:px-20 xl:mt-4 select-none bg-testimonialsBg">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full py-8">
-          <div className="flex flex-col justify-start p-5">
+          <div data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex flex-col justify-start p-5">
             <h4 className="text-base pb-4 font-semibold xl:text-xl tracking-widest text-primary">
               Better Tracking
             </h4>
@@ -78,7 +78,7 @@ const CustomSolutionsPage = () => {
               unattended and untracked processes.
             </p>
           </div>
-          <div className="flex flex-col justify-start p-5">
+          <div data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex flex-col justify-start p-5">
             <h4 className="text-base pb-4 font-semibold xl:text-xl tracking-widest text-primary">
               Timely Course Correction
             </h4>
@@ -88,7 +88,7 @@ const CustomSolutionsPage = () => {
               increase in overall productivity and organizational efficiency.
             </p>
           </div>
-          <div className="flex flex-col justify-start p-5">
+          <div data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex flex-col justify-start p-5">
             <h4 className="text-base pb-4 font-semibold xl:text-xl tracking-widest text-primary">
               Informed Decision Making
             </h4>
@@ -99,7 +99,7 @@ const CustomSolutionsPage = () => {
               decisions.
             </p>
           </div>
-          <div className="flex flex-col justify-start p-5">
+          <div data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex flex-col justify-start p-5">
             <h4 className="text-base pb-4 font-semibold xl:text-xl tracking-widest text-primary">
               Digital & Data Ready!
             </h4>
@@ -119,7 +119,7 @@ const CustomSolutionsPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full gap-16 md:gap-28 lg:gap-32 xl:gap-32 md:px-32 lg:px-36 xl:px-40 text-center mt-20">
           {process_data.map((process, idx) => {
             return (
-              <div key={idx} className="flex justify-center items-center">
+              <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" key={idx} className="flex justify-center items-center">
                 <div className="w-20">
                   <FontAwesomeIcon
                     icon={process.icon}
@@ -153,7 +153,7 @@ const CustomSolutionsPage = () => {
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full gap-8 xl:gap-16 md:px-16 lg:px-16 xl:px-16 text-center mt-8 mb-4 xl:mt-16 xl:mb-4">
           <Link href="/transport-operations">
-            <div className="flex justify-center items-center gap-5 p-2 md:p-4 lg:p-4 xl:p-4 border border-dashed border-black rounded-sm hover:bg-testimonialsBg">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex justify-center items-center gap-5 p-2 md:p-4 lg:p-4 xl:p-4 border border-dashed border-black rounded-sm hover:bg-testimonialsBg">
               <div className="w-20 md:w-24 lg:w-32 xl:w-32">
                 <Image src={transport} alt="Transport Operations Management" />
               </div>
@@ -170,7 +170,7 @@ const CustomSolutionsPage = () => {
             </div>
           </Link>
           <Link href="/performance-review-management">
-            <div className="flex justify-center items-center gap-5 p-2 md:p-4 lg:p-4 xl:p-4 border border-dashed border-black rounded-sm hover:bg-testimonialsBg">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex justify-center items-center gap-5 p-2 md:p-4 lg:p-4 xl:p-4 border border-dashed border-black rounded-sm hover:bg-testimonialsBg">
               <div className="w-20 md:w-24 lg:w-32 xl:w-32">
                 <Image src={prm} alt="Performance Review Management" />
               </div>
@@ -187,7 +187,7 @@ const CustomSolutionsPage = () => {
             </div>
           </Link>
           <Link href="/agency-operations">
-            <div className="flex justify-center items-center gap-5 p-2 md:p-4 lg:p-4 xl:p-4 border border-dashed border-black rounded-sm hover:bg-testimonialsBg">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex justify-center items-center gap-5 p-2 md:p-4 lg:p-4 xl:p-4 border border-dashed border-black rounded-sm hover:bg-testimonialsBg">
               <div className="w-20 md:w-24 lg:w-32 xl:w-32">
                 <Image src={agency} alt="Agency Operations Management" />
               </div>

@@ -5,11 +5,13 @@ import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 interface QuoteBannerProps {
   content: string;
   author: string;
+  animation: string;
+  offset: string;
 }
 
-const QuoteBanner = ({ content, author }: QuoteBannerProps) => {
+const QuoteBanner = ({ content, author, animation, offset }: QuoteBannerProps) => {
   return (
-    <div className="mt-12 md:8 lg:8 p-4 bg-primary w-full 2xl:p-8">
+    <div data-aos="" className="mt-12 md:8 lg:8 p-4 bg-primary w-full 2xl:p-8">
       <h4 className="whitespace-pre-wrap text-center text-white text-sm md:text-lg lg:text-lg xl:text-xl font-normal tracking-widest lg:px-20 xl:px-20">
         <FontAwesomeIcon
           icon={faQuoteLeft}

@@ -11,6 +11,8 @@ const Home: NextPage = () => {
     <div className="mt-16 tracking-widest">
       <Slider />
       <QuoteBanner
+        animation=""
+        offset=""
         content={
           "ALWAYS PUT PEOPLE FIRST, FOR WITHOUT THEM THERE IS NO ORGANIZATION"
         }
@@ -18,6 +20,8 @@ const Home: NextPage = () => {
       />
       <Services />
       <QuoteBanner
+        animation=""
+        offset=""
         content={
           "IF YOU GET YOUR PEOPLE CAPABILITY RIGHT FIRST… AND CONTINUE TO MAKE IT YOUR FIRST PRIORITY…I GUARANTEE YOU THE RESULTS WILL FOLLOW."
         }
@@ -25,6 +29,8 @@ const Home: NextPage = () => {
       />
       <Essentials />
       <QuoteBanner
+        animation=""
+        offset=""
         content={"TO WIN THE MARKETPLACE, YOU MUST FIRST WIN THE WORKPLACE"}
         author={"DOUG CONANT"}
       />

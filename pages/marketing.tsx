@@ -68,25 +68,25 @@ const Marketing: NextPage = () => {
       <div className="flex justify-center items-center flex-col gap-8 px-3 mt-2 xl:px-15 xl:mt-4 select-none bg-marketingBg">
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 w-full py-8">
           <div className="flex flex-col justify-center items-center text-center p-5">
-            <h4 className="text-2xl p-5 font-bold xl:text-3xl text-center text-primary">
+            <h4 className="text-2xl p-5 font-bold xl:text-4xl text-center text-primary">
               178
             </h4>
             <p className="text-sm font-light text-black">Projects Managed</p>
           </div>
           <div className="flex flex-col justify-center items-center text-center p-5">
-            <h4 className="text-2xl p-5 font-bold xl:text-3xl text-center text-primary">
+            <h4 className="text-2xl p-5 font-bold xl:text-4xl text-center text-primary">
               15
             </h4>
             <p className="text-sm font-light text-black">Geographies Catered</p>
           </div>
           <div className="flex flex-col justify-center items-center text-center p-5">
-            <h4 className="text-2xl p-5 font-bold xl:text-3xl text-center text-primary">
+            <h4 className="text-2xl p-5 font-bold xl:text-4xl text-center text-primary">
               198
             </h4>
             <p className="text-sm font-light text-black">Campaigns Delivered</p>
           </div>
           <div className="flex flex-col justify-center items-center text-center p-5">
-            <h4 className="text-2xl p-5 font-bold xl:text-3xl text-center text-primary">
+            <h4 className="text-2xl p-5 font-bold xl:text-4xl text-center text-primary">
               10.32
             </h4>
             <p className="text-sm font-light text-black">
@@ -107,7 +107,7 @@ const Marketing: NextPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full gap-16 md:gap-28 lg:gap-32 xl:gap-32 md:px-32 lg:px-36 xl:px-40 mt-20 text-center">
           {services_data.map((service, idx) => {
             return (
-              <div key={idx} className="flex justify-center items-center">
+              <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" key={idx} className="flex justify-center items-center">
                 <div className="w-20">
                   <FontAwesomeIcon
                     icon={service.icon}

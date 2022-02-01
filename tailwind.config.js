@@ -12,7 +12,8 @@ module.exports = {
         greyButtonBg: "#afafaf",
       },
       gridTemplateColumns: {
-        essential: "70% 30%"
+        essential: "70% 30%",
+        contact: "60% 40%"
       }
     },
   },
