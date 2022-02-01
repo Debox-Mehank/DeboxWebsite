@@ -37,7 +37,7 @@ const clientsData: ClientsLogos[] = [
 
 const Clients = () => {
   return (
-    <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex justify-center items-center flex-col px-3 py-5 m-2 xl:px-15 xl:py-8 xl:m-4 select-none">
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex justify-center items-center flex-col px-3 py-5 m-2 xl:px-15 xl:py-8 xl:m-4 select-none">
       <h4 className="pb-4 pt-4 text-xl font-normal xl:text-3xl tracking-widest text-center">
         Our Clients
       </h4>
