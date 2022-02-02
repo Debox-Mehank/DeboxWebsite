@@ -1,18 +1,29 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
+import sugalLogo from "../assets/client_logos/Client_logo_Sugal&Damani.png"
+import accLogo from "../assets/client_logos/Client_logo_ACC.png"
+import bdoLogo from "../assets/client_logos/Client_logo_BDO.png"
+import boomLogo from "../assets/client_logos/Client_logo_Boom.png"
+import khelLogo from "../assets/client_logos/Client_logo_Khel_Play.png"
+import parazelsusLogo from "../assets/client_logos/Client_logo_Parazelsus.png"
+import inradiusLogo from "../assets/client_logos/Client_logo_InRadius.png"
 import scorpioLogo from "../assets/client_logos/Client_logo_Scorpio.png"
-import junosLogo from "../assets/client_logos/Client_logo_Junos.png"
-import naturalsLogo from "../assets/client_logos/Client_logo_Naturals.png"
-import rawLogo from "../assets/client_logos/Client_logo_Raw.png"
 import caiLogo from "../assets/client_logos/Client_logo_Cai.png"
-import silaLogo from "../assets/client_logos/Client_logo_Sila.png"
-import sanjeevLogo from "../assets/client_logos/Client_logo_Sanjeev.png"
-import advikLogo from "../assets/client_logos/Client_logo_Advik.png"
+import socheersLogo from "../assets/client_logos/Client_logo_Socheers.png"
+import unwrappedLogo from "../assets/client_logos/Client_logo_Unwrapped.png"
+import socailkinnectLogo from "../assets/client_logos/Client_logo_Social_kinnect.png"
+import foxyMoronLogo from "../assets/client_logos/Client_logo_Foxymoron.png"
+import schbangLogo from "../assets/client_logos/Client_logo_Schbang.png"
+import rawLogo from "../assets/client_logos/Client_logo_Raw.png"
 import kalkiLogo from "../assets/client_logos/Client_logo_Kalki.png"
-import modLogo from "../assets/client_logos/Client_logo_MOD.png"
-import peakscaleLogo from "../assets/client_logos/Client_logo_PeakScale.png"
+import kmgLogo from "../assets/client_logos/Client_logo_KMG.png"
+import advikLogo from "../assets/client_logos/Client_logo_Advik.png"
+import junosLogo from "../assets/client_logos/Client_logo_Junos.png"
 import bestLogo from "../assets/client_logos/Client_logo_Best.png"
+import nippoLogo from "../assets/client_logos/Client_logo_Best.png"
+import naturalsLogo from "../assets/client_logos/Client_logo_Nippo.png"
+import novitaLogo from "../assets/client_logos/Client_logo_Novita.png"
 import { Autoplay } from "swiper";
 
 interface ClientsLogos {
@@ -21,18 +32,29 @@ interface ClientsLogos {
 }
 
 const clientsData: ClientsLogos[] = [
+  { image: sugalLogo, name: "SUGAL AND DAMANI" },
+  { image: accLogo, name: "ACC" },
+  { image: bdoLogo, name: "BDO" },
+  { image: boomLogo, name: "BOOM" },
+  { image: khelLogo, name: "KHEL PLAY" },
+  { image: parazelsusLogo, name: "PARAZELSUS" },
+  { image: inradiusLogo, name: "IN RADIUS" },
   { image: scorpioLogo, name: "Scorpio" },
-  { image: junosLogo, name: "Junos Pizza" },
-  { image: naturalsLogo, name: "Naturals Icecream" },
-  { image: rawLogo, name: "Raw Pressery" },
   { image: caiLogo, name: "CAI" },
-  { image: silaLogo, name: "Sila" },
-  { image: sanjeevLogo, name: "Sanjeev" },
-  { image: advikLogo, name: "Advik" },
+  { image: socheersLogo, name: "SOCHEERS" },
+  { image: unwrappedLogo, name: "UNWRAPPED" },
+  { image: socailkinnectLogo, name: "SOCIAL KINNECT" },
+  { image: foxyMoronLogo, name: "FOXY MORON" },
+  { image: schbangLogo, name: "SCHBANG" },
+  { image: rawLogo, name: "Raw Pressery" },
   { image: kalkiLogo, name: "Kalki" },
-  { image: modLogo, name: "Mad Over Donuts" },
-  { image: peakscaleLogo, name: "PeakScale" },
+  { image: kmgLogo, name: "KMG ROBUST" },
+  { image: advikLogo, name: "Advik" },
+  { image: junosLogo, name: "Junos Pizza" },
   { image: bestLogo, name: "Best" },
+  { image: nippoLogo, name: "NIPPO" },
+  { image: naturalsLogo, name: "Naturals Icecream" },
+  { image: novitaLogo, name: "Novita" },
 ]
 
 const Clients = () => {
