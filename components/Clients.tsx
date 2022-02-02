@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import sugalLogo from "../assets/client_logos/Client_logo_Sugal&Damani.png"
+import sugalLogo from "../assets/client_logos/Client_logo_SugalandDamani.png"
 import accLogo from "../assets/client_logos/Client_logo_ACC.png"
 import bdoLogo from "../assets/client_logos/Client_logo_BDO.png"
 import boomLogo from "../assets/client_logos/Client_logo_Boom.png"
@@ -21,8 +21,8 @@ import kmgLogo from "../assets/client_logos/Client_logo_KMG.png"
 import advikLogo from "../assets/client_logos/Client_logo_Advik.png"
 import junosLogo from "../assets/client_logos/Client_logo_Junos.png"
 import bestLogo from "../assets/client_logos/Client_logo_Best.png"
-import nippoLogo from "../assets/client_logos/Client_logo_Best.png"
-import naturalsLogo from "../assets/client_logos/Client_logo_Nippo.png"
+import nippoLogo from "../assets/client_logos/Client_logo_Nippo.png"
+import naturalsLogo from "../assets/client_logos/Client_logo_Naturals.png"
 import novitaLogo from "../assets/client_logos/Client_logo_Novita.png"
 import { Autoplay } from "swiper";
 
