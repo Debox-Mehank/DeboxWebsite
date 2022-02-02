@@ -36,7 +36,7 @@ const TestimonialCard = ({
           </div>
         </div>
       </div>
-      <div className="w-full hidden md:hidden lg:block xl:block">
+      <div className="w-full hidden md:hidden lg:block xl:block md:px-32 lg:px-40 xl:px-48">
         <div className="flex items-center max-w-5xl mx-auto">
           <div className="bg-white py-8 pl-8 pr-14 shadow-md rounded-md">
             <h4 className="font-bold text-xl">{name}</h4>

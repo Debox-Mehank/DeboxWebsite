@@ -103,7 +103,14 @@ const teams_data: TeamCardProps[] = [
 const Consulting: NextPage = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-screen bg-cover bg-center consulting-div"></div>
+      <div className="w-full h-screen bg-cover bg-center consulting-div relative">
+        <div className="absolute bottom-10 flex justify-center items-center w-full">
+          <Button
+            title="Check our Consulting Deck"
+            link="https://consulting.debox.co.in/"
+          />
+        </div>
+      </div>
       <h4 className="text-center text-lg md:text-2xl lg:text-2xl xl:text-2xl whitespace-pre-wrap p-4 md:p-16 lg:p-16 xl:p-16 leading-9 tracking-wide">
         {
           "We partner with businesses to build a Sustainable Growth path through\nsynergies of People, Processes and Technology."
@@ -175,12 +182,8 @@ const Consulting: NextPage = () => {
       </div>
       <div className="flex flex-col space-y-8 md:flex-row lg:flex-row xl:flex-row justify-around items-center w-full mt-4 mb-12">
         <Button
-          title="Check our Consulting Deck"
-          link="https://debox.co.in/consulting-portfolio/"
-        />
-        <Button
           title="Check our Risk Advisory Deck"
-          link="https://debox.co.in/risk-advisory/"
+          link="https://riskadvisory.debox.co.in/"
         />
       </div>
       <div className="flex justify-center items-center flex-col px-3 py-5 m-2 xl:px-15 xl:py-8 xl:m-4 select-none">

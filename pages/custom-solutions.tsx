@@ -15,6 +15,7 @@ import prm from "../assets/PRM_icon.png";
 import agency from "../assets/agency_icon.png";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "../components/reusable/Button";
 
 interface OurProcess {
   icon: IconDefinition;
@@ -64,7 +65,14 @@ const process_data: OurProcess[] = [
 const CustomSolutionsPage = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-screen bg-cover bg-center custom-solutions-div"></div>
+      <div className="w-full h-screen bg-cover bg-center custom-solutions-div relative">
+        <div className="flex justify-center items-center w-full absolute bottom-10">
+          <Button
+            title="CHECK OUR TECH PORTFOLIO"
+            link="https://tech.debox.co.in/"
+          />
+        </div>
+      </div>
       {/* 4 grid section */}
       <div className="flex justify-center items-center flex-col gap-8 px-3 mt-2 xl:px-20 xl:mt-4 select-none bg-testimonialsBg">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full py-8">

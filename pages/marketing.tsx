@@ -59,7 +59,14 @@ const services_data: MarketingService[] = [
 const Marketing: NextPage = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-screen bg-cover bg-center marketing-div"></div>
+      <div className="w-full h-screen bg-cover bg-center marketing-div relative">
+        <div className="flex justify-center items-center w-full absolute bottom-10">
+          <Button
+            title="CHECK OUR PORTFOLIO"
+            link="https://marketing.debox.co.in/"
+          />
+        </div>
+      </div>
       <h4 className="text-center text-lg md:text-2xl lg:text-2xl xl:text-2xl whitespace-pre-wrap p-4 md:p-16 lg:p-16 xl:p-16 leading-9 tracking-wide">
         {
           "Over the years we have built solid relations with the best of the Digital Agencies across the globe. Through our industry network, we bring together the best of the industry to provide you with marketing solutions that focus on ROI and Growth and not just superficial social numbers. "
@@ -127,12 +134,6 @@ const Marketing: NextPage = () => {
             );
           })}
         </div>
-      </div>
-      <div className="flex justify-center items-center w-full mt-4 mb-12">
-        <Button
-          title="CHECK OUR PORTFOLIO"
-          link="https://debox.co.in/marketing-portfolio/"
-        />
       </div>
     </div>
   );
