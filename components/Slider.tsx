@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SliderItem from "./reusable/SliderItem";
 import img1 from "../assets/homeslider/img1.webp";
 import img2 from "../assets/homeslider/img2.webp";
@@ -26,6 +26,23 @@ const data: SliderData[] = [
 
 const Slider = () => {
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      console.log(index);
+      if (index === data.length - 1) {
+        setIndex(0)
+      } else {
+        setIndex((prev) => prev + 1)
+      }
+    }, 3000);
+    return () => {
+      clearInterval(interval);
+    };
+
+  }, [index]);
+
+
   return (
     <div className="w-full flex justify-center items-center flex-col text-center font-bold p-4 md:px-36 lg:px-40 xl:px-48 relative">
       {data.map((slide, idx) => {

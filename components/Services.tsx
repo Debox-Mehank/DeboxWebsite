@@ -31,7 +31,7 @@ const data: ServicesData[] = [
     title: "Technology",
     content:
       "We partner with you in identifying key data sets to enable technology and data-driven decisions.",
-    link: "/tech",
+    link: "/custom-solutions",
   },
 ];
 
