@@ -15,8 +15,7 @@ import kf_dashboard from "../assets/kf_dashboard.png";
 import smarttv from "../assets/smarttv.png";
 import desktop from "../assets/desktop.png";
 import mobile from "../assets/mobile.png";
-import integrations_web from "../assets/integrations_web.webp";
-import integrations_mobile from "../assets/integrations_mobile.webp";
+import IntegrationsSlider from "../components/reusable/IntegrationsSlider";
 
 const PRM = () => {
   const [annual, setAnnual] = useState(true);
@@ -144,16 +143,14 @@ const PRM = () => {
         <div className="flex justify-center items-center gap-8 mt-4 mb-6 xl:mb-8 xl:mt-5">
           <div
             onClick={() => setAnnual(true)}
-            className={`text-white ${
-              annual ? "bg-primary" : "bg-greyButtonBg"
-            } font-semibold text-sm shadow-md cursor-pointer rounded-sm px-4 mt-3 py-2 w-max uppercase`}>
+            className={`text-white ${annual ? "bg-primary" : "bg-greyButtonBg"
+              } font-semibold text-sm shadow-md cursor-pointer rounded-sm px-4 mt-3 py-2 w-max uppercase`}>
             Annual
           </div>
           <div
             onClick={() => setAnnual(false)}
-            className={`text-white ${
-              annual ? "bg-greyButtonBg" : "bg-primary"
-            } font-semibold text-sm shadow-md cursor-pointer rounded-sm px-4 mt-3 py-2 w-max uppercase`}>
+            className={`text-white ${annual ? "bg-greyButtonBg" : "bg-primary"
+              } font-semibold text-sm shadow-md cursor-pointer rounded-sm px-4 mt-3 py-2 w-max uppercase`}>
             Bi-Annual
           </div>
         </div>
@@ -227,17 +224,7 @@ const PRM = () => {
         </div>
       </div>
       {/* Integrations */}
-      <div className="flex justify-center items-center flex-col px-3 mt-2 xl:px-20 xl:mt-4 select-none bg-testimonialsBg">
-        <h4 className="pt-8 text-xl font-normal xl:text-2xl tracking-widest text-center">
-          Integrations
-        </h4>
-        <div className="flex-1 text-right hidden md:block lg:block xl:block py-10">
-          <Image src={integrations_web} alt={"Integrations"} priority />
-        </div>
-        <div className="flex-1 text-center md:hidden lg:hidden xl:hidden py-8">
-          <Image src={integrations_mobile} alt={"Integrations"} priority />
-        </div>
-      </div>
+      <IntegrationsSlider />
       {/* Schedule Demo */}
       <div className="flex justify-center items-center flex-col px-3 m-2 xl:px-15 xl:py-8 xl:m-4 select-none">
         <h4 className="pt-4 text-xl font-normal xl:text-2xl tracking-widest text-center uppercase">
