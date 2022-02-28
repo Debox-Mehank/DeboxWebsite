@@ -8,6 +8,7 @@ import "swiper/css";
 import "aos/dist/aos.css"
 import Aos from "aos"
 import Head from "next/head";
+import Script from "next/script"
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -25,6 +26,15 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="We partner with businesses to build a sustainable growth path through synergies of people, processes and technology."
         />
       </Head>
+      <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=UA-101882907-1" />
+      <Script strategy="lazyOnload">
+        {
+          `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-101882907-1');`
+        }
+      </Script>
       <Component {...pageProps} />
     </Layout>
   );
