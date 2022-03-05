@@ -136,7 +136,7 @@ const AgencyOperations = () => {
         </div>
       </div>
       {/* Pricing */}
-      <div className="flex justify-center items-center flex-col select-none">
+      {/* <div className="flex justify-center items-center flex-col select-none">
         <h4 className="pt-4 text-xl font-normal xl:text-2xl tracking-widest text-center mb-3 mt-4">
           CHOOSE A PLAN
         </h4>
@@ -177,15 +177,15 @@ const AgencyOperations = () => {
             mc_title="Monthly Subscription Charges:"
           />
         )}
-      </div>
+      </div> */}
       {/* Roi Banner */}
-      <div className="mt-2">
+      {/* <div className="mt-2">
         <RedBanner
           content="KNOW HOW MUCH YOU CAN SAVE"
           link="/agency-operations-roi-calculator"
           btn="Calculate ROI"
         />
-      </div>
+      </div> */}
       {/* Accessible */}
       <div className="flex justify-center items-center flex-col px-3 mt-2 xl:px-20 xl:mt-4 select-none">
         <h4 className="pt-8 text-xl font-normal xl:text-2xl tracking-widest text-center">

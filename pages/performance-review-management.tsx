@@ -136,7 +136,7 @@ const PRM = () => {
         </div>
       </div>
       {/* Pricing */}
-      <div className="flex justify-center items-center flex-col select-none">
+      {/* <div className="flex justify-center items-center flex-col select-none">
         <h4 className="pt-4 text-xl font-normal xl:text-2xl tracking-widest text-center mb-3 mt-4">
           CHOOSE A PLAN
         </h4>
@@ -181,7 +181,7 @@ const PRM = () => {
             mc_title="Quarterly Subscription Charges:"
           />
         )}
-      </div>
+      </div> */}
       {/* Roi Banner */}
       <div className="mt-2">
         <div className="md:8 lg:8 p-8 bg-primary w-full 2xl:p-8 flex flex-col justify-center items-center">
