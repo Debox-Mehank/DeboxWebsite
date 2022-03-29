@@ -22,7 +22,7 @@ const Footer = () => {
           </h4>
           <p className="font-light text-white text-sm whitespace-pre-wrap">
             {
-              "Super Office 1, Redbrick Supremus,\nLodha Supremus, Kolshet Industrial\nArea, Thane (W) - 400604, Mumbai."
+              "1014, Lodha Supremus - Tower B\nLodha Business District, 2, Kolshet Rd,\nThane, Maharashtra 400607"
             }
           </p>
         </div>
