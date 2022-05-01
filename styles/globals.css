@@ -38,7 +38,9 @@ body {
     opacity: 0;
   }
 }
-
+.about-div{
+  background-image: url("../public/aboutus.jpg");
+}
 .consulting-div {
   background-image: url("../public/consulting.jpg");
 }

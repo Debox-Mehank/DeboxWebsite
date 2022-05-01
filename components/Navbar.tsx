@@ -119,10 +119,16 @@ const Navbar = () => {
           </div>
         </div>
         <NavItem
+          title="About Us"
+          link="/about-us"
+          active={router.pathname === "/about-us"}
+        />
+        <NavItem
           title="Contact Us"
           link="/contact"
           active={router.pathname === "/contact"}
         />
+
       </ul>
 
       <ul
@@ -147,6 +153,12 @@ const Navbar = () => {
           title="Tech"
           link="/custom-solutions"
           active={router.pathname === "/custom-solutions"}
+        />
+        <hr className="ml-4 mr-8 my-2" />
+        <NavItem
+          title="About Us"
+          link="/about-us"
+          active={router.pathname === "/"}
         />
         <hr className="ml-4 mr-8 my-2" />
         <NavItem
