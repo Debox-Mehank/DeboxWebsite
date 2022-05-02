@@ -7,6 +7,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#BF1E2E",
+        secondary: "#D42133",
+        darkRed: "#9F1926",
         essentialBtn: "#C3C3C3",
         testimonialsBg: "#f5f5f5",
         tableRowBg: "#F4F7F6",

@@ -38,7 +38,7 @@ body {
     opacity: 0;
   }
 }
-.about-div{
+.about-div {
   background-image: url("../public/aboutus.jpg");
 }
 .consulting-div {
@@ -109,3 +109,6 @@ body {
   }
 }
 
+.text-last-left {
+  text-align-last: left;
+}
