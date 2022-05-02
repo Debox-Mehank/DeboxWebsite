@@ -47,7 +47,7 @@ const Navbar = () => {
       role="navigation">
       <div className="hidden md:block lg:block">
         <Link href="/">
-          <a className="items-center mx-3 inline-flex">
+          <a className="items-center mx-8 my-4 inline-flex">
             <Image
               src={Logo}
               height={scrolled ? 80 : 90}
@@ -118,6 +118,11 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+        {/* <NavItem
+          title="Blog"
+          link="/blogs"
+          active={router.pathname.includes("blogs")}
+        /> */}
         <NavItem
           title="Contact Us"
           link="/contact"

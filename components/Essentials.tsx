@@ -66,7 +66,7 @@ const Essentials = () => {
   return (
     <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex justify-center items-center flex-col gap-8 px-3 pt-5 m-2 xl:px-15 xl:py-8 xl:m-4 select-none">
       <h4 className="pt-4 text-xl font-normal xl:text-3xl tracking-widest text-center">
-        6 Essentials to build a Sustainable Bussiness
+        6 Essentials to build a Sustainable Business
       </h4>
       {/* Buttons */}
       <div className="flex-row space-x-2 justify-center items-center xl:px-16 lg:px-8 hidden md:flex lg:flex xl:flex">

@@ -43,6 +43,8 @@ const clientsData: ClientsLogos[] = [
   { image: caiLogo, name: "CAI" },
   { image: socheersLogo, name: "SOCHEERS" },
   { image: unwrappedLogo, name: "UNWRAPPED" },
+]
+const clientsData1: ClientsLogos[] = [
   { image: socailkinnectLogo, name: "SOCIAL KINNECT" },
   { image: foxyMoronLogo, name: "FOXY MORON" },
   { image: schbangLogo, name: "SCHBANG" },
@@ -82,6 +84,9 @@ const Clients = () => {
               <SwiperSlide key={idx}>
                 <div className="flex justify-center items-center">
                   <Image src={client.image} width={200} height={200} alt={client.name} />
+                </div>
+                <div className="flex justify-center items-center">
+                  <Image src={clientsData1[idx] ? clientsData1[idx].image : client.image} width={200} height={200} alt={clientsData1[idx] ? clientsData1[idx].name : client.name} />
                 </div>
               </SwiperSlide>
             )

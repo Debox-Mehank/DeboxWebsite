@@ -7,7 +7,7 @@ const Layout: NextPage = ({ children }) => {
   return (
     <div className="min-h-full flex flex-col tracking-widest">
       <Head>
-        <title>Debox Consulting - Bussiness Consulting Firm</title>
+        <title>Debox Consulting - Business Consulting Firm</title>
       </Head>
       <Navbar />
       {children}

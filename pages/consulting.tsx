@@ -180,12 +180,12 @@ const Consulting: NextPage = () => {
           })}
         </div>
       </div>
-      <div className="flex flex-col space-y-8 md:flex-row lg:flex-row xl:flex-row justify-around items-center w-full mt-4 mb-12">
+      {/* <div className="flex flex-col space-y-8 md:flex-row lg:flex-row xl:flex-row justify-around items-center w-full mt-4 mb-12">
         <Button
           title="Check our Risk Advisory Deck"
           link="https://riskadvisory.debox.co.in/"
         />
-      </div>
+      </div> */}
       <div className="flex justify-center items-center flex-col px-3 py-5 m-2 xl:px-15 xl:py-8 xl:m-4 select-none">
         <h4 className="pb-10 pt-4 text-xl font-normal xl:text-3xl tracking-widest text-center">
           Consulting Team

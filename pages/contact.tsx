@@ -111,9 +111,9 @@ const Contact = () => {
                 className="text-primary mt-1"
                 icon={faEnvelope}
               />
-              <Link href={"mailto:communications@debox.co.in"}>
+              <Link href={"mailto:darshan@debox.co.in"}>
                 <p className="font-light text-black hover:text-primary text-sm text-left flex-1">
-                  communications@debox.co.in
+                  darshan@debox.co.in
                 </p>
               </Link>
             </div>
@@ -138,7 +138,7 @@ const Contact = () => {
                 icon={faLocationDot}
               />
               <p className="font-light text-black text-sm whitespace-pre-wrap flex-1">
-                {"Coming soon in Dallas!"}
+                {"Ste 1200, 1309 Coffeen Avenue\nSheridan, WY, Sheridan\nUS, 82801"}
               </p>
             </div>
             <div className="flex justify-between w-full gap-4">
@@ -146,9 +146,9 @@ const Contact = () => {
                 className="text-primary mt-1"
                 icon={faEnvelope}
               />
-              <Link href={"mailto:communications@debox.co.in"}>
+              <Link href={"mailto:darshan@debox.co.in"}>
                 <p className="font-light text-black hover:text-primary text-sm text-left flex-1">
-                  communications@debox.co.in
+                  darshan@debox.co.in
                 </p>
               </Link>
             </div>

@@ -13,6 +13,7 @@ import kalki from "../assets/kalki_logo.png";
 import kaykay from "../assets/kaykay_logo.png";
 import advik from "../assets/advik_logo.webp";
 import junos from "../assets/junos_logo.png";
+import { Autoplay } from "swiper";
 
 export interface TestimonialData {
   image: StaticImageData;
@@ -140,6 +141,12 @@ const Testimonial = () => {
           slidesPerView={1}
           onSwiper={(s) => setSwiper(s)}
           autoHeight={true}
+          loop={true}
+        // autoplay={{
+        //   delay: 5000,
+        //   disableOnInteraction: false
+        // }}
+        // modules={[Autoplay]}
         >
           {testimonialData.map((testimonial, idx) => {
             return (
