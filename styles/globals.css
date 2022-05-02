@@ -38,7 +38,9 @@ body {
     opacity: 0;
   }
 }
-
+.about-div {
+  background-image: url("../public/aboutus.jpg");
+}
 .consulting-div {
   background-image: url("../public/consulting.jpg");
 }
@@ -69,6 +71,13 @@ body {
 
 .has_dropdown:focus-within .dropdown,
 .has_dropdown:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.has_techdropdown:focus-within .techdropdown,
+.has_techdropdown:hover .techdropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -107,3 +116,6 @@ body {
   }
 }
 
+.text-last-left {
+  text-align-last: left;
+}

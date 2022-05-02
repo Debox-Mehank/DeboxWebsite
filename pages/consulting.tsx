@@ -118,12 +118,24 @@ const Consulting: NextPage = () => {
       </h4>
       <div className="flex justify-center items-center flex-col gap-8 px-3 mt-2 xl:px-15 xl:mt-4 select-none bg-testimonialsBg">
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 w-full py-8">
-          <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex flex-col justify-center">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            className="flex flex-col justify-center"
+          >
             <h4 className="text-xl p-5 font-normal xl:text-3xl tracking-widest text-center text-primary">
               Our Process
             </h4>
           </div>
-          <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex flex-col justify-start p-5">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            className="flex flex-col justify-start p-5"
+          >
             <h4 className="text-base pb-4 font-normal xl:text-xl tracking-widest text-primary underline">
               Build
             </h4>
@@ -132,7 +144,13 @@ const Consulting: NextPage = () => {
               your business, people and data.
             </p>
           </div>
-          <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex flex-col justify-start p-5">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            className="flex flex-col justify-start p-5"
+          >
             <h4 className="text-base pb-4 font-normal xl:text-xl tracking-widest text-primary underline">
               Operate
             </h4>
@@ -141,7 +159,13 @@ const Consulting: NextPage = () => {
               performance to ensure project success.
             </p>
           </div>
-          <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex flex-col justify-start p-5">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            className="flex flex-col justify-start p-5"
+          >
             <h4 className="text-base pb-4 font-normal xl:text-xl tracking-widest text-primary underline">
               Transfer
             </h4>
@@ -159,7 +183,14 @@ const Consulting: NextPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 w-full gap-16 md:gap-28 lg:gap-32 xl:gap-32 md:px-32 lg:px-36 xl:px-40 text-center">
           {services_data.map((service, idx) => {
             return (
-              <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" key={idx} className="flex justify-center items-center">
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                key={idx}
+                className="flex justify-center items-center"
+              >
                 <div className="w-20">
                   <FontAwesomeIcon
                     icon={service.icon}
