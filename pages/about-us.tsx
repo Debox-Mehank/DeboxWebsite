@@ -39,6 +39,14 @@ export default function AboutUs() {
     },
   ];
 
+  const darshan = {
+    name: "Darshan Vyas",
+    designation: "Founder",
+    desc: "He has more than 10 years of industry experience having worked with Corporates like Godrej, Future Group and Sequent Scientific (acquired by the Carlyle Group) and was leading the consulting team at Stratum Consulting for over 2 years. He has studied Human Resources from Welingkar’s followed by Executive Post Graduation in Marketing & Communications from MICA.  He is certified in Balanced Scorecard Deployment (Performance Management) and in CII Business Excellence (EFQM) Model Deployment Facilitation. Over the years, he has got opportunities to work alongside the top consulting firms like BCG, Hay, KPMG, Thomas International, and Cerebrus during his corporate stints. He focuses on designing high impact solutions by bringing together his understanding of Business, People and Data.",
+    email: "darshan@debox.co.in",
+    linkedin: "https://www.linkedin.com/in/thebusinesssolutionist/",
+  };
+
   return (
     <main className="mx-auto font-normal">
       <div className="h-screen bg-cover bg-center about-div mb-8"></div>
@@ -70,6 +78,26 @@ export default function AboutUs() {
             solid trust amongst our clients and have a high customer referral
             rate and we take pride in the same.
           </p>
+
+          <div className="">
+            <h4 className="mb-4 font-bold">About the Owner</h4>
+            <h4 className="text-xl mb-4"> Darshan Vyas</h4>
+            <p>
+              He has more than 10 years of industry experience having worked
+              with Corporates like Godrej, Future Group and Sequent Scientific
+              (acquired by the Carlyle Group) and was leading the consulting
+              team at Stratum Consulting for over 2 years. He has studied Human
+              Resources from Welingkar’s followed by Executive Post Graduation
+              in Marketing & Communications from MICA. He is certified in
+              Balanced Scorecard Deployment (Performance Management) and in CII
+              Business Excellence (EFQM) Model Deployment Facilitation. Over the
+              years, he has got opportunities to work alongside the top
+              consulting firms like BCG, Hay, KPMG, Thomas International, and
+              Cerebrus during his corporate stints. He focuses on designing high
+              impact solutions by bringing together his understanding of
+              Business, People and Data.
+            </p>
+          </div>
         </div>
 
         {/* Divider */}
