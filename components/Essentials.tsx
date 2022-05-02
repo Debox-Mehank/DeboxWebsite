@@ -64,7 +64,13 @@ const Essentials = () => {
   const [swiper, setSwiper] = useState<any>();
 
   return (
-    <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" className="flex justify-center items-center flex-col gap-8 px-3 pt-5 m-2 xl:px-15 xl:py-8 xl:m-4 select-none">
+    <div
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      className="flex justify-center items-center flex-col gap-8 px-3 pt-5 m-2 xl:px-15 xl:py-8 xl:m-4 select-none"
+    >
       <h4 className="pt-4 text-xl font-normal xl:text-3xl tracking-widest text-center">
         6 Essentials to build a Sustainable Business
       </h4>
@@ -89,7 +95,7 @@ const Essentials = () => {
             onClick={() => {
               if (swiper.activeIndex > 0) {
                 console.log("Clicked");
-                swiper.slideTo(swiper.activeIndex - 1)
+                swiper.slideTo(swiper.activeIndex - 1);
               }
             }}
             className="bg-gray-400 rounded-full p-2 hover:bg-gray-500 text-white w-7 h-7 lg:w-10 lg:h-10 md:w-10 md:h-10 cursor-pointer"
@@ -114,7 +120,7 @@ const Essentials = () => {
           <div
             onClick={() => {
               if (swiper.activeIndex < 6) {
-                swiper.slideTo(swiper.activeIndex + 1)
+                swiper.slideTo(swiper.activeIndex + 1);
               }
             }}
             className="bg-gray-400 rounded-full p-2 hover:bg-gray-500 text-white w-7 h-7 lg:w-10 lg:h-10 md:w-10 md:h-10 cursor-pointer"
@@ -202,10 +208,11 @@ const Essentials = () => {
               }}
               className={
                 swiper
-                  ? `border-2 rounded-full w-2 h-2 ${swiper.activeIndex === idx
-                    ? "border-transparent bg-primary"
-                    : "border-primary"
-                  }`
+                  ? `border-2 rounded-full w-2 h-2 ${
+                      swiper.activeIndex === idx
+                        ? "border-transparent bg-primary"
+                        : "border-primary"
+                    }`
                   : `border-2 rounded-full w-2 h-2 border-primary`
               }
             ></div>
