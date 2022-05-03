@@ -7,6 +7,12 @@ import empowerment from "../assets/about/empowerment.svg";
 import mission from "../assets/about/mission.png";
 import vision from "../assets/about/vision.png";
 
+import Darshan from "../assets/Darshan.webp";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 export default function AboutUs() {
   const values = [
     {
@@ -45,6 +51,7 @@ export default function AboutUs() {
     desc: "He has more than 10 years of industry experience having worked with Corporates like Godrej, Future Group and Sequent Scientific (acquired by the Carlyle Group) and was leading the consulting team at Stratum Consulting for over 2 years. He has studied Human Resources from Welingkar’s followed by Executive Post Graduation in Marketing & Communications from MICA.  He is certified in Balanced Scorecard Deployment (Performance Management) and in CII Business Excellence (EFQM) Model Deployment Facilitation. Over the years, he has got opportunities to work alongside the top consulting firms like BCG, Hay, KPMG, Thomas International, and Cerebrus during his corporate stints. He focuses on designing high impact solutions by bringing together his understanding of Business, People and Data.",
     email: "darshan@debox.co.in",
     linkedin: "https://www.linkedin.com/in/thebusinesssolutionist/",
+    image: Darshan
   };
 
   return (
@@ -79,9 +86,53 @@ export default function AboutUs() {
             rate and we take pride in the same.
           </p>
 
-          <div className="">
-            <h4 className="mb-4 font-bold">About the Owner</h4>
-            <h4 className="text-xl mb-4"> Darshan Vyas</h4>
+          <div className="my-8">
+            <h4 className="mb-4 font-bold">About the Founder</h4>
+            <div className="flex flex-col justify-center items-center">
+              <div className="hidden md:flex lg:flex xl:flex border-4 p-1 border-primary w-max rounded-full justify-center items-center transition hover:opacity-80 hover:bg-primary">
+                <Image
+                  className="rounded-full"
+                  src={darshan.image}
+                  alt={darshan.name}
+                  width={150}
+                  height={150}
+                  objectFit="cover"
+                />
+              </div>
+              <div className="flex md:hidden lg:hidden xl:hidden border-4 p-1 border-primary w-max rounded-full justify-center items-center transition hover:opacity-80 hover:bg-primary">
+                <Image
+                  className="rounded-full"
+                  src={darshan.image}
+                  alt={darshan.name}
+                  width={120}
+                  height={120}
+                  objectFit="cover"
+                />
+              </div>
+              <h4 className="text-lg md:text-xl lg:text-xl xl:text-xl text-primary mt-4 tracking-widest">
+                {darshan.name}
+              </h4>
+              <h4 className="text-sm md:text-sm lg:text-sm xl:text-sm text-gray-400 mt-1">
+                {darshan.designation}
+              </h4>
+              <p className="text-sm md:text-base lg:text-base xl:text-base text-gray-600 whitespace-pre-wrap mt-4">
+                {darshan.desc}
+              </p>
+              <Link href={`mailto:${darshan.email}`}>
+                <h4 className="text-sm md:text-base lg:text-base xl:text-base text-primary mt-4 hover:text-black">
+                  <FontAwesomeIcon icon={faEnvelope} className="mr-4" size="lg" />
+                  {darshan.email}
+                </h4>
+              </Link>
+              <Link href={darshan.linkedin} replace={false}>
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  className="mt-2 text-gray-400 hover:text-blue-500"
+                  size="lg"
+                />
+              </Link>
+            </div>
+            {/* <h4 className="text-xl mb-4"> Darshan Vyas</h4>
             <p>
               He has more than 10 years of industry experience having worked
               with Corporates like Godrej, Future Group and Sequent Scientific
@@ -96,7 +147,7 @@ export default function AboutUs() {
               Cerebrus during his corporate stints. He focuses on designing high
               impact solutions by bringing together his understanding of
               Business, People and Data.
-            </p>
+            </p> */}
           </div>
         </div>
 
