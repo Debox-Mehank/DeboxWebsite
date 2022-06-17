@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import sugalLogo from "../assets/client_logos/Client_logo_SugalandDamani.png"
