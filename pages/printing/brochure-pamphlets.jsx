@@ -180,11 +180,15 @@ const BrochurePamphlets = () => {
                                             <div className="max-w-screen-2xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                                                 <div className="">
                                                     <div className="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
-                                                        <form name="brochure_inquiry_form" data-netlify="true" action={`brochure-pamphlets?submit=true`} method="POST" className="space-y-4">
+                                                        <form name="brochureInquiryForm" data-netlify="true" action='/printing/brochure-pamphlets?submit=true' method="POST" className="space-y-4">
                                                             <div>
                                                                 <label className="sr-only" htmlFor="name">Full Name</label>
-                                                                <input className="w-full p-3 text-sm md:text-base lg:text-base xl:text-base border-2 border-gray-200 rounded-lg
-                                    " placeholder="Full Name" type="text" id="name" name='fullName' />
+                                                                <input
+                                                                    className="w-full p-3 text-sm md:text-base lg:text-base xl:text-base border-2 border-gray-200 rounded-lg"
+                                                                    placeholder="Full Name"
+                                                                    type="text"
+                                                                    id="name"
+                                                                    name='fullName' />
                                                             </div>
 
                                                             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -220,7 +224,7 @@ const BrochurePamphlets = () => {
 
 
 
-                                                            <Select options={options} placeholder="Product(s) Required" isMulti={true} />
+                                                            <Select name='productsRequired' options={options} placeholder="Product(s) Required" isMulti={true} />
 
 
                                                             <div>
@@ -230,6 +234,7 @@ const BrochurePamphlets = () => {
                                                                     placeholder="Message"
                                                                     rows="8"
                                                                     id="message"
+                                                                    name='remarks'
                                                                 ></textarea>
                                                             </div>
 
