@@ -211,14 +211,14 @@ const BrochurePamphlets = () => {
                                             onChange={() => null}
                                             placeholder="Phone Number"
                                         /> */}
-                                                                    <PhoneInput
+                                                                    {/* <PhoneInput
                                                                         name="phoneNumber"
                                                                         placeholder="Enter phone number"
                                                                         className='bg-white w-full p-3 rounded text-sm md:text-base border-2 border-gray-200     lg:text-base xl:text-base'
                                                                         onChange={() => null}
                                                                         defaultCountry="US"
                                                                         required
-                                                                    />
+                                                                    /> */}
                                                                 </div>
                                                             </div>
 
