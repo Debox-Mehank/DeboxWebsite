@@ -13,6 +13,7 @@ import withReactContent from 'sweetalert2-react-content'
 // Hooks
 import { useState, useEffect, Component } from 'react';
 import { useRouter } from 'next/router';
+
 // Utilities
 import 'react-responsive-modal/styles.css';
 import 'react-phone-number-input/style.css'
@@ -138,6 +139,9 @@ const BrochurePamphlets = () => {
         <div className=''>
             <PrintingHeader />
             <section>
+                <div className="hidden">
+                    <PrintingInquiryForm formName="BrochureInquiryForm" productList={[]} />
+                </div>
                 <div className="px-4 md:py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-full gap-8">
                         <div className="relative z-10 lg:py-16">
