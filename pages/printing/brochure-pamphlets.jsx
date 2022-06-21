@@ -176,6 +176,63 @@ const BrochurePamphlets = () => {
                                     {/* Props :- productList: options, formName: brochure_inquiry_form */}
                                     <Modal open={open} onClose={onCloseModal} center>
 
+                                        <form name="contact23" data-netlify="true" action="/printing/brochure-pamphlets/?submit=true" method="POST" className="w-full px-8 lg:px-20 xl:px-20 py-4 lg:py-0 xl:py-0 flex flex-col justify-center gap-6">
+                                            <input type="hidden" name="form-name" value="contact" />
+                                            <p className="text-black font-semibold text-xs md:text-sm lg:text-sm xl:text-sm my-2">Fields marked with an <span className="text-red-800">*</span> are required.</p>
+                                            <div className="flex flex-col gap-1">
+                                                <label className="text-xs md:text-sm lg:text-sm xl:text-sm">What services are you looking for?<span className="text-red-800">*</span></label>
+                                                <div className="flex items-center justify-start gap-2">
+                                                    <input required type="radio" name="services" id="services-consulting" />
+                                                    <label htmlFor="services-consulting" className="text-xs md:text-sm lg:text-sm xl:text-sm">Consulting</label>
+                                                </div>
+                                                <div className="flex items-center justify-start gap-2">
+                                                    <input required type="radio" name="services" id="services-marketing" />
+                                                    <label htmlFor="services-marketing" className="text-xs md:text-sm lg:text-sm xl:text-sm">Marketing</label>
+                                                </div>
+                                                <div className="flex items-center justify-start gap-2">
+                                                    <input required type="radio" name="services" id="services-tech" />
+                                                    <label htmlFor="services-tech" className="text-xs md:text-sm lg:text-sm xl:text-sm">Tech</label>
+                                                </div>
+                                                <div className="flex items-center justify-start gap-2">
+                                                    <input required type="radio" name="services" id="services-design" />
+                                                    <label htmlFor="services-design" className="text-xs md:text-sm lg:text-sm xl:text-sm">Design</label>
+                                                </div>
+                                            </div>
+                                            <div className="flex flex-col gap-1">
+                                                <label htmlFor="urgency" className="text-xs md:text-sm lg:text-sm xl:text-sm">How urgent is the project?<span className="text-red-800">*</span></label>
+                                                <select required id="urgency" name="urgency" className="bg-gray-100 p-2 rounded text-sm md:text-base lg:text-base xl:text-base">
+                                                    <option value="low">Low</option>
+                                                    <option value="medium">Medium</option>
+                                                    <option value="high">High</option>
+                                                </select>
+                                            </div>
+                                            <div className="flex flex-col gap-1">
+                                                <label htmlFor="duedate" className="text-xs md:text-sm lg:text-sm xl:text-sm">Due Date<span className="text-red-800">*</span></label>
+                                                <input required id="duedate" name="duedate" type={"date"} className="bg-gray-100 p-2 rounded text-sm md:text-base lg:text-base xl:text-base" />
+                                            </div>
+                                            <div className="flex flex-col gap-1">
+                                                <label htmlFor="desc" className="text-xs md:text-sm lg:text-sm xl:text-sm">Describe Your Project<span className="text-red-800">*</span></label>
+                                                <textarea required rows={4} id="desc" name="desc" className="bg-gray-100 p-2 rounded text-sm md:text-base lg:text-base xl:text-base" />
+                                            </div>
+                                            <div className="flex flex-col gap-1">
+                                                <label htmlFor="fullname" className="text-xs md:text-sm lg:text-sm xl:text-sm">Full Name<span className="text-red-800">*</span></label>
+                                                <input required id="fullname" name="fullname" type="text" className="bg-gray-100 p-2 rounded text-sm md:text-base lg:text-base xl:text-base" />
+                                            </div>
+                                            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-4">
+                                                <div className="flex flex-col gap-1">
+                                                    <label htmlFor="email" className="text-xs md:text-sm lg:text-sm xl:text-sm">Email<span className="text-red-800">*</span></label>
+                                                    <input required id="email" name="email" type="email" className="bg-gray-100 p-2 rounded text-sm md:text-base lg:text-base xl:text-base" />
+                                                </div>
+                                                <div className="flex flex-col gap-1">
+                                                    <label htmlFor="phone" className="text-xs md:text-sm lg:text-sm xl:text-sm">Mobile Number<span className="text-red-800">*</span></label>
+                                                    <input required id="phone" name="phone" type="number" maxLength={10} className="bg-gray-100 p-2 rounded text-sm md:text-base lg:text-base xl:text-base" />
+                                                </div>
+                                            </div>
+                                            <div className="w-full">
+                                                <input type="submit" value="Submit" className="text-white bg-primary font-semibold text-sm shadow-md cursor-pointer rounded-sm py-1.5 px-4 mt-3 lg:py-2 hover:text-black hover:bg-gray-300 w-max uppercase" />
+                                            </div>
+                                        </form>
+                                        {/* 
                                         <section className="bg-gray-100 shadow-2xl">
                                             <div className="max-w-screen-2xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                                                 <div className="">
@@ -215,7 +272,6 @@ const BrochurePamphlets = () => {
 
                                                                 </div>
                                                             </div>
-
 
 
                                                             <Select name='Products Required' options={options} placeholder="Product(s) Required" isMulti={true} />
@@ -271,7 +327,7 @@ const BrochurePamphlets = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
+                                        </section> */}
                                     </Modal>
 
 
