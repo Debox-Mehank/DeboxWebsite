@@ -180,7 +180,7 @@ const BrochurePamphlets = () => {
                                             <div className="max-w-screen-2xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                                                 <div className="">
                                                     <div className="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
-                                                        <form name="brochureInquiryForm" data-netlify="true" action='/printing/brochure-pamphlets?submit=true' method="POST" className="space-y-4">
+                                                        <form name="brochureInquiryForm" data-netlify="true" action='/printing/brochure-pamphlets/?submit=true' method="POST" className="space-y-4">
                                                             <div>
                                                                 <label className="sr-only" htmlFor="name">Full Name</label>
                                                                 <input
@@ -205,26 +205,20 @@ const BrochurePamphlets = () => {
 
                                                                 <div>
                                                                     <label className="sr-only" htmlFor="phone">Phone</label>
-                                                                    {/* <Input
-                                            className="bg-white w-full p-3 rounded text-sm md:text-base border-2 border-gray-200     lg:text-base xl:text-base "
-                                            country="US"
-                                            onChange={() => null}
-                                            placeholder="Phone Number"
-                                        /> */}
-                                                                    {/* <PhoneInput
-                                                                        name="phoneNumber"
-                                                                        placeholder="Enter phone number"
-                                                                        className='bg-white w-full p-3 rounded text-sm md:text-base border-2 border-gray-200     lg:text-base xl:text-base'
+                                                                    <Input
+                                                                        className="bg-white w-full p-3 rounded text-sm md:text-base border-2 border-gray-200     lg:text-base xl:text-base "
+                                                                        country="US"
                                                                         onChange={() => null}
-                                                                        defaultCountry="US"
-                                                                        required
-                                                                    /> */}
+                                                                        placeholder="Phone Number"
+                                                                        name="Phone Number"
+                                                                    />
+
                                                                 </div>
                                                             </div>
 
 
 
-                                                            <Select name='productsRequired' options={options} placeholder="Product(s) Required" isMulti={true} />
+                                                            <Select name='Products Required' options={options} placeholder="Product(s) Required" isMulti={true} />
 
 
                                                             <div>
@@ -234,7 +228,7 @@ const BrochurePamphlets = () => {
                                                                     placeholder="Message"
                                                                     rows="8"
                                                                     id="message"
-                                                                    name='remarks'
+                                                                    name='Remarks'
                                                                 ></textarea>
                                                             </div>
 
@@ -243,11 +237,11 @@ const BrochurePamphlets = () => {
                                                                 Urgent Requirement?
                                                                 <div className='flex items-center gap-4'>
                                                                     <div>
-                                                                        <input className='mx-1' type="radio" name="urgent" id="urgent" />
+                                                                        <input className='mx-1' type="radio" name="Urgent" id="urgent" />
                                                                         <label htmlFor="urgent">Yes</label>
                                                                     </div>
                                                                     <div>
-                                                                        <input className='mx-1' type="radio" name="urgent" id="not-urgent" />
+                                                                        <input className='mx-1' type="radio" name="Urgent" id="not-urgent" />
                                                                         <label htmlFor="not-urgent">No</label>
                                                                     </div>
 
