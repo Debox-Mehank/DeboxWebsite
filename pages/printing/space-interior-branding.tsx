@@ -115,7 +115,7 @@ const BrochurePamphlets = () => {
                   </a>
 
                   <Modal open={open} onClose={onCloseModal} center>
-                    <PrintingInquiryForm productList={options} formName="interior_branding_inquiry_form" />
+                    <PrintingInquiryForm productList={options} formName="InteriorBrandingInquiryForm" />
                   </Modal>
 
 

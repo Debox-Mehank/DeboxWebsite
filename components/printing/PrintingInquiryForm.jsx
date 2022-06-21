@@ -20,7 +20,7 @@ function PrintingInquiryForm({ productList, formName }) {
                                 <div>
                                     <label className="sr-only" htmlFor="name">Full Name</label>
                                     <input className="w-full p-3 text-sm md:text-base lg:text-base xl:text-base border-2 border-gray-200 rounded-lg
-                                    " placeholder="Full Name" type="text" id="name" name='fullName' />
+                                    " placeholder="Full Name" type="text" id="name" name='Full Name' />
                                 </div>
 
                                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -37,26 +37,20 @@ function PrintingInquiryForm({ productList, formName }) {
 
                                     <div>
                                         <label className="sr-only" htmlFor="phone">Phone</label>
-                                        {/* <Input
+                                        <Input
                                             className="bg-white w-full p-3 rounded text-sm md:text-base border-2 border-gray-200     lg:text-base xl:text-base "
                                             country="US"
                                             onChange={() => null}
                                             placeholder="Phone Number"
-                                        /> */}
-                                        <PhoneInput
-                                            name="phoneNumber"
-                                            placeholder="Enter phone number"
-                                            className='bg-white w-full p-3 rounded text-sm md:text-base border-2 border-gray-200     lg:text-base xl:text-base'
-                                            onChange={() => null}
-                                            defaultCountry="US"
-                                            required
+                                            name="Phone Number"
                                         />
+
                                     </div>
                                 </div>
 
 
 
-                                <Select options={productList} placeholder="Product(s) Required" isMulti={true} />
+                                <Select name='Products Required' options={productList} placeholder="Product(s) Required" isMulti={true} />
 
 
                                 <div>
@@ -66,6 +60,7 @@ function PrintingInquiryForm({ productList, formName }) {
                                         placeholder="Message"
                                         rows="8"
                                         id="message"
+                                        name='Message'
                                     ></textarea>
                                 </div>
 

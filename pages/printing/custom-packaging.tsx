@@ -18,7 +18,7 @@ const options = [
     value: "tissue-paper"
   },
   {
-    label: "Carrybags (show different materials)",
+    label: "Carrybags",
     value: "carrybags"
   },
   {
@@ -208,7 +208,7 @@ const BrochurePamphlets = () => {
                   </a>
 
                   <Modal open={open} onClose={onCloseModal} center>
-                    <PrintingInquiryForm productList={options} formName="packaging_inquiry_form" />
+                    <PrintingInquiryForm productList={options} formName="PackagingInquiryForm" />
                   </Modal>
 
                 </div>

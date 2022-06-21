@@ -4,6 +4,7 @@ import withReactContent from 'sweetalert2-react-content'
 import Swal from 'sweetalert2'
 import { useEffect } from "react";
 const MySwal = withReactContent(Swal)
+import PrintingInquiryForm from '../../components/printing/PrintingInquiryForm';
 
 function index() {
     const router = useRouter()
@@ -24,6 +25,11 @@ function index() {
     return (
         <div>
             <PrintingHeader />
+            <div className="hidden">
+                <PrintingInquiryForm formName="BrochureInquiryForm" productList={[]} />
+                <PrintingInquiryForm formName="PackagingInquiryForm" productList={[]} />
+                <PrintingInquiryForm formName="InteriorBrandingInquiryForm" productList={[]} />
+            </div>
         </div>
     )
 }
