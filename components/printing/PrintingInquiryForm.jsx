@@ -9,14 +9,14 @@ import PhoneInput from 'react-phone-number-input'
 
 
 function PrintingInquiryForm({ productList, formName }) {
-
+    // action="/printing?submit=true"
     return (
         <>
             <section className="bg-gray-100 shadow-2xl">
                 <div className="max-w-screen-2xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
                     <div className="">
                         <div className="p-8 bg-white rounded-lg shadow-lg lg:p-12 lg:col-span-3">
-                            <form name={formName} data-netlify="true" action={`/printing?submit=true`} method="POST" className="space-y-4">
+                            <form name={formName} data-netlify="true" method="POST" className="space-y-4">
                                 <div>
                                     <label className="sr-only" htmlFor="name">Full Name</label>
                                     <input className="w-full p-3 text-sm md:text-base lg:text-base xl:text-base border-2 border-gray-200 rounded-lg
@@ -31,7 +31,7 @@ function PrintingInquiryForm({ productList, formName }) {
                                             placeholder="Email address"
                                             type="email"
                                             id="email"
-                                            name='email'
+                                            name='Email'
                                         />
                                     </div>
 
@@ -69,11 +69,11 @@ function PrintingInquiryForm({ productList, formName }) {
                                     Urgent Requirement?
                                     <div className='flex items-center gap-4'>
                                         <div>
-                                            <input className='mx-1' type="radio" name="urgent" id="urgent" />
+                                            <input className='mx-1' type="radio" name="Urgent?" id="urgent" />
                                             <label htmlFor="urgent">Yes</label>
                                         </div>
                                         <div>
-                                            <input className='mx-1' type="radio" name="urgent" id="not-urgent" />
+                                            <input className='mx-1' type="radio" name="Urgent?" id="not-urgent" />
                                             <label htmlFor="not-urgent">No</label>
                                         </div>
 
