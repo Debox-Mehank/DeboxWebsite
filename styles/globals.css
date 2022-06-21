@@ -13,6 +13,7 @@ body,
 #__next {
   height: 100%;
 }
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
@@ -38,9 +39,11 @@ body {
     opacity: 0;
   }
 }
+
 .about-div {
   background-image: url("../public/aboutus.jpg");
 }
+
 .consulting-div {
   background-image: url("../public/consulting.jpg");
 }
@@ -84,6 +87,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
   /* For mobile phones: */
   .marketing-div {
     background-image: url("../public/marketing_mobile.jpg");
@@ -118,4 +122,34 @@ body {
 
 .text-last-left {
   text-align-last: left;
+}
+
+/* Printing Pages Carousel*/
+
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.item-detail {
+  width: 300px;
+  height: 225px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: red !important;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: red !important;
+}
+
+/*  */
+.printing-desktop-view {
+  height: calc(90vh - 9rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
