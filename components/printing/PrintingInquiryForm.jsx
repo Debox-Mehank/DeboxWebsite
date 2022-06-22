@@ -20,7 +20,7 @@ function PrintingInquiryForm({ productList, formName }) {
                             <form name={formName}
                                 data-netlify="true"
                                 method="POST"
-                                action="/printing/brochure-pamphlets?submit=true"
+                                action="/printing?submit=true"
                                 className="space-y-4">
                                 <div>
                                     <label className="sr-only" htmlFor="name">Full Name</label>
@@ -99,7 +99,7 @@ function PrintingInquiryForm({ productList, formName }) {
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"
                                         >
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                                         </svg>
                                     </button>
                                 </div>
