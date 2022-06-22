@@ -20,7 +20,7 @@ function PrintingInquiryForm({ productList, formName }) {
                             <form name={formName}
                                 data-netlify="true"
                                 method="POST"
-                                action="/printing?submit=true"
+                                action="/contact?submit=true"
                                 className="space-y-4">
                                 <div>
                                     <label className="sr-only" htmlFor="name">Full Name</label>
