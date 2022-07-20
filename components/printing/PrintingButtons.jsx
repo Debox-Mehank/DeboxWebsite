@@ -4,6 +4,7 @@ import Image from 'next/image';
 import PrintButton from './PrintButton'
 import { useRouter } from 'next/router'
 
+
 function PrintingButtons() {
     const router = useRouter()
     return (

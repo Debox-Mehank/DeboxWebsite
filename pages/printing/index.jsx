@@ -1,4 +1,4 @@
-import PrintingHeader from "../../components/printing/PrintingHeader";
+import PrintHeader from "../../components/printing/PrintHeader";
 import { useRouter } from 'next/router'
 import withReactContent from 'sweetalert2-react-content'
 import Swal from 'sweetalert2'
@@ -24,7 +24,7 @@ function index() {
 
     return (
         <div>
-            <PrintingHeader />
+            <PrintHeader />
             <div className="hidden">
                 <PrintingInquiryForm formName="BrochureInquiryForm" productList={[]} />
                 <PrintingInquiryForm formName="PackagingInquiryForm" productList={[]} />
