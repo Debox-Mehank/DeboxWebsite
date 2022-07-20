@@ -31,7 +31,7 @@ export default function Carousel(props) {
                     disableOnInteraction: false,
                     waitForTransition: false
                 }}
-                modules={[Autoplay, Pagination, Navigation]}
+                modules={[Autoplay, Navigation]}
             >
                 {props.imgArray.map((img, idx) => {
                     return (

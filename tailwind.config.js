@@ -15,6 +15,9 @@ module.exports = {
         marketingBg: "#e0e0e0",
         greyButtonBg: "#afafaf",
         rose: colors.rose,
+        printingButton:"#fbfbfb",
+        printingRed:"#BF1E2ED1",
+
       },
       gridTemplateColumns: {
         essential: "70% 30%",

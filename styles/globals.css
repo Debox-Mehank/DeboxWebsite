@@ -153,3 +153,24 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+
+.box-shadow{
+  box-shadow: -10px 10px  #f74548;
+}
+
+
+#btn:hover{
+  box-shadow: 0px 0px 15px 10px #f7454882;
+  border: 2px solid  white;
+ 
+}
+
+
+
+
+.PrintHead{
+  background-image: url("https://res.cloudinary.com/debox/image/upload/v1658144495/Debox%20/Printing/Printing/Debox_Print_Banners_k08btp.jpg");
+  height: 80vh;
+  /* background-position: 0px; */
+}
