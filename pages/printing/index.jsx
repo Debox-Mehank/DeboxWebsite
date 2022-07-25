@@ -1,4 +1,4 @@
-import PrintHeader from "../../components/printing/PrintHeader";
+import PrintHeader from "../../components/printing/PrintingHeader";
 import { useRouter } from 'next/router'
 import withReactContent from 'sweetalert2-react-content'
 import Swal from 'sweetalert2'
@@ -8,7 +8,7 @@ import PrintingInquiryForm from '../../components/printing/PrintingInquiryForm';
 
 function index() {
     const router = useRouter()
-    const query = router.query
+    const query = <router className="query"></router>
 
     useEffect(() => {
         if (query && query.submit === "true") {
@@ -23,7 +23,7 @@ function index() {
     }, [query])
 
     return (
-        <div>
+        <div className="bg-white">
             <PrintHeader />
             <div className="hidden">
                 <PrintingInquiryForm formName="BrochureInquiryForm" productList={[]} />

@@ -36,8 +36,8 @@ export default function Carousel(props) {
                 {props.imgArray.map((img, idx) => {
                     return (
                         <SwiperSlide key={idx}>
-                            <div className="flex justify-center items-center bg-marketingBg">
-                                <Image className="rounded-2xl" src={img.url} width={800} height={600} alt={img.alt} />
+                            <div className="flex justify-center items-center">
+                                <Image className="rounded-3xl shadow-2xl" objectFit="contain" src={img.url} width={800} height={600} alt={img.alt} />
                             </div>
                         </SwiperSlide>
                     )

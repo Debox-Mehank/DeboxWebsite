@@ -177,6 +177,7 @@ body {
   background-image: url("https://res.cloudinary.com/debox/image/upload/v1658144495/Debox%20/Printing/Printing/Debox_Print_Banners_k08btp.jpg");
   /* height: 68vh; */
   height: 83vh;
+  background-size: cover;
   /* background-position: 0px; */
 }
 

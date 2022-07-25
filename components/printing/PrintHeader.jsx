@@ -27,8 +27,8 @@ function PrintHeader() {
 
     return (
 
-        <div>
-            <div className='PrintBanner flex flex-col'>
+        <div className=''>
+            <div className='flex flex-col'>
                 <PrintingHeader />
 
             </div>
