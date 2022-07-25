@@ -75,12 +75,18 @@ function PrintingInquiryForm({ productList, formName }) {
                                     Urgent Requirement?
                                     <div className='flex items-center gap-4'>
                                         <div>
-                                            <input className='mx-1' type="radio" name="Urgent?" id="urgent" />
-                                            <label htmlFor="urgent">Urgent</label>
+
+                                            <label>
+                                                <input className='mx-1' type="radio" name="Urgent" value="Urgent" />
+                                                Yes
+                                            </label>
                                         </div>
                                         <div>
-                                            <input className='mx-1' type="radio" name="Urgent?" id="not-urgent" />
-                                            <label htmlFor="not-urgent">Not Urgent</label>
+
+                                            <label>
+                                                <input className='mx-1' type="radio" name="Urgent" value={"Not Urgent"} />
+                                                No
+                                            </label>
                                         </div>
 
                                     </div>
