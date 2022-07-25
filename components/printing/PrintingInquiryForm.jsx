@@ -76,11 +76,11 @@ function PrintingInquiryForm({ productList, formName }) {
                                     <div className='flex items-center gap-4'>
                                         <div>
                                             <input className='mx-1' type="radio" name="Urgent?" id="urgent" />
-                                            <label htmlFor="urgent">Yes</label>
+                                            <label htmlFor="urgent">Urgent</label>
                                         </div>
                                         <div>
                                             <input className='mx-1' type="radio" name="Urgent?" id="not-urgent" />
-                                            <label htmlFor="not-urgent">No</label>
+                                            <label htmlFor="not-urgent">Not Urgent</label>
                                         </div>
 
                                     </div>

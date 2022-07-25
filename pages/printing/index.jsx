@@ -8,7 +8,7 @@ import PrintingInquiryForm from '../../components/printing/PrintingInquiryForm';
 
 function index() {
     const router = useRouter()
-    const query = <router className="query"></router>
+    const query = router.query
 
     useEffect(() => {
         if (query && query.submit === "true") {
