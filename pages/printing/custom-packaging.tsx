@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import Link from 'next/link'
 import PrintingButtons from '../../components/printing/PrintingButtons'
 import HeaderImages from '../../components/printing/HeaderImages'
@@ -168,26 +168,26 @@ const BrochurePamphlets = () => {
   const onCloseModal = () => setOpen(false);
 
   return (
-    <div className=''>
+    <div>
       <PrintingHeader />
-      <section>
-      <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8 bg-marketingBg">
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-full gap-8">
-            <div className="relative z-10 lg:py-16">
-            <div className='box-shadow rounded-2xl  '>
-              <div className="relative h-64 sm:h-80 lg:h-full">
+      <section className='bg-marketingBg'>
+        <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2  gap-8 lg:gap-32">
+            <div className="">
+
+              <div className="">
                 <Carousel imgArray={packagingImgs} />
               </div>
-              </div>
+
             </div>
 
-            <div className="relative flex items-center">
+            <div className=" flex items-center">
               {/* <span
                 className="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-red-100 lg:block lg:-left-16"
               ></span> */}
 
-              <div className="p-8 sm:p-16 lg:p-24">
-                <h2 className="text-2xl font-bold sm:text-3xl text-rose-600"> 
+              <div className="py-8 sm:py-16 lg:py-24">
+                <h2 className="text-2xl font-bold sm:text-3xl text-primary">
                   Customised Packaging
                 </h2>
 
@@ -197,7 +197,7 @@ const BrochurePamphlets = () => {
 
                 <div className='flex flex-col text-center md:gap-8 md:flex-row'>
                   <button onClick={onOpenModal}
-                   className="cursor-pointer inline-block px-12 py-3 mt-8 text-md font-medium text-white bg-red-600 shadow-md hover:shadow-2xl hover:bg-red-800 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none rounded-full"
+                    className="cursor-pointer inline-block px-12 py-3 mt-8 text-md font-medium text-white bg-red-600 shadow-md hover:shadow-2xl hover:bg-red-800 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none rounded-full"
                   >
                     Get a quote.
                   </button>

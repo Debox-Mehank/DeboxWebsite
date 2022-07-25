@@ -1,5 +1,5 @@
 
-import React, {useEffect, useRef} from 'react'
+import React, { useEffect, useRef } from 'react'
 import PrintingButtons from '../../components/printing/PrintingButtons'
 import HeaderImages from '../../components/printing/HeaderImages'
 import useMediaQuery from '../../hooks/useMediaQuery';
@@ -18,18 +18,24 @@ function PrintingHeader() {
     const banner = useRef(null)
     useEffect(
         () => {
+            var lastScroll = 0;
             const onScroll = () => {
-              const strNum = banner.current.style.backgroundPosition.slice(0,banner.current.style.backgroundPosition.substring.length-11)
-              const num = Number(strNum)
-              banner.current.style.backgroundPosition = `${num+5}px center`
-              
-            console.log(num, banner.current.style.backgroundPosition)
-            // banner.current.style.backgroundPosition = "100px"
-        
+                let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+                const strNum = banner.current.style.backgroundPosition.slice(0, banner.current.style.backgroundPosition.substring.length - 11)
+                const num = Number(strNum)
+
+                if (currentScroll > 0 && lastScroll <= currentScroll) {
+                    lastScroll = currentScroll;
+                    banner.current.style.backgroundPosition = `${num + 5}px center`
+                } else {
+                    lastScroll = currentScroll;
+                    banner.current.style.backgroundPosition = `${num - 5}px center`
+                }
+
             };
             window.addEventListener("scroll", onScroll);
             return () => window.removeEventListener("scroll", onScroll);
-        },[]
+        }, []
     );
 
 
@@ -41,12 +47,12 @@ function PrintingHeader() {
         //     
         // </div>
         <div className=' bg-marketingBg pb-10'>
-            <div style={{backgroundPosition: "0px center"}} className=' PrintHead mt-36 ' ref={banner} ></div>
-            
-            <PrintingButtons /> 
+            <div style={{ backgroundPosition: "0px center" }} className=' PrintHead mt-36 ' ref={banner} ></div>
+
+            <PrintingButtons />
         </div>
-        
-         
+
+
     )
 }
 

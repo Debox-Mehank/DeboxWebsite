@@ -4,6 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   letter-spacing: 0.05em;
 }
@@ -155,22 +159,28 @@ body {
 }
 
 
-.box-shadow{
-  box-shadow: -10px 10px  #f74548;
+.box-shadow {
+  box-shadow: -10px 10px #f74548;
 }
 
 
-#btn:hover{
+#btn:hover {
   box-shadow: 0px 0px 15px 10px #f7454882;
-  border: 2px solid  white;
- 
+  border: 2px solid white;
+
 }
 
 
 
 
-.PrintHead{
+.PrintHead {
   background-image: url("https://res.cloudinary.com/debox/image/upload/v1658144495/Debox%20/Printing/Printing/Debox_Print_Banners_k08btp.jpg");
-  height: 80vh;
+  /* height: 68vh; */
+  height: 83vh;
   /* background-position: 0px; */
+}
+
+
+.react-responsive-modal-modal {
+  padding: 0 !important;
 }

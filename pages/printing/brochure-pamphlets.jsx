@@ -136,30 +136,31 @@ const BrochurePamphlets = () => {
     }, [query])
 
     return (
-        <div className=''>
+        <div>
             <PrintingHeader />
-            <section>
+            <section className='bg-marketingBg'>
                 <div className="hidden">
                     <PrintingInquiryForm formName="BrochureInquiryForm" productList={[]} />
                 </div>
-                <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8 bg-marketingBg ">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-full gap-8">
-                        <div className="relative z-10 lg:py-16">
-                        <div className='box-shadow rounded-2xl  '>
-                            <div className="relative h-64 sm:h-80 lg:h-full">
+                <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8 ">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-full gap-8 lg:gap-32">
+                        <div className="">
+                            {/* relative z-10 lg:py-16  */}
+                            <div className="">
+                                {/* relative h-64 sm:h-80 lg:h-full lg:w-full */}
                                 <Carousel imgArray={brochureImgs} />
                             </div>
-                        </div>    
                         </div>
 
-                        <div className="relative flex items-center ">
+
+                        <div className="flex items-center ">
                             {/* <span
                                 className="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-red-100 lg:block lg:-left-16"
                             ></span> */}
 
-                            <div className="p-8 sm:p-16 lg:p-24">
-                                <h2 className="text-2xl font-bold sm:text-3xl">
-                                    Brochure & Pamphlet
+                            <div className="py-8 sm:py-16 lg:py-24">
+                                <h2 className="text-2xl font-bold sm:text-3xl text-primary">
+                                    {"Brochure & Pamphlets"}
                                 </h2>
 
                                 <p className="mt-4 text-gray-600">
@@ -180,7 +181,7 @@ const BrochurePamphlets = () => {
                                         Chat on WhatsApp!
                                     </a>
                                     {/* Props :- productList: options, formName: brochure_inquiry_form */}
-                                    <Modal open={open} onClose={onCloseModal} center>
+                                    <Modal classNames={"p-0"} open={open} onClose={onCloseModal} center>
 
                                         <PrintingInquiryForm formName="BrochureInquiryForm" productList={options} />
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import Link from 'next/link'
 import PrintingButtons from '../../components/printing/PrintingButtons'
 import HeaderImages from '../../components/printing/HeaderImages'
@@ -77,25 +77,23 @@ const BrochurePamphlets = () => {
   return (
     <div className=''>
       <PrintingHeader />
-      <section>
-        <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8 bg-marketingBg">
-          <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-full gap-8">
-            <div className="relative z-10 lg:py-16">
-              <div className='box-shadow rounded-2xl  '>
-              <div className="relative h-64 sm:h-80 lg:h-full">
+      <section className='bg-marketingBg'>
+        <div className="px-4 py-16 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-32">
+            <div className="">
+              <div className="">
                 <Carousel imgArray={carouselImgs} />
-              </div>
               </div>
             </div>
 
-            <div className="relative flex items-center ">
+            <div className="flex items-center ">
               {/* <span
                 className="hidden lg:inset-y-0 lg:absolute lg:w-16 lg:bg-red-100 lg:block lg:-left-16"
               ></span> */}
 
-              <div className="p-8 sm:p-16 lg:p-24">
+              <div className="py-8 sm:py-16 lg:py-24">
                 <h2 className="text-2xl font-bold sm:text-3xl text-rose-600">
-                  Space & Interior Branding
+                  {"Space & Interior Branding"}
                 </h2>
 
                 <p className="mt-4 text-gray-600">
