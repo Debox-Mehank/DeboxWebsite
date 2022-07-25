@@ -109,7 +109,7 @@ const BrochurePamphlets = () => {
 
                   <a
                     className="inline-block px-12 py-3 mt-8 text-md font-semibold text-green-600 bg-white shadow-md hover:shadow-2xl hover:bg-gray-200 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none rounded-full"
-                    href="https://api.whatsapp.com/send?phone=14047316010"
+                    href="https://api.whatsapp.com/send?phone=919326236724"
                   >
                     Chat on WhatsApp!
                   </a>
