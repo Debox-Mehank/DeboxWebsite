@@ -9,12 +9,34 @@ import "aos/dist/aos.css"
 import Aos from "aos"
 import Head from "next/head";
 import Script from "next/script"
+import * as fbq from '../lib/fpixel'
+import { useRouter } from 'next/router'
+
 config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }: AppProps) {
+
+  const router = useRouter()
+
   useEffect(() => {
     Aos.init()
   }, []);
+
+  // For FB Pixel
+  useEffect(() => {
+
+    fbq.pageview()
+
+    const handleRouteChange = () => {
+      fbq.pageview()
+    }
+
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
+
 
   return (
     <Layout>
@@ -26,6 +48,25 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="We partner with businesses to build a sustainable growth path through synergies of people, processes and technology."
         />
       </Head>
+      {/* Facebook Pixel */}
+      <Script
+        id="fb-pixel"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', ${fbq.FB_PIXEL_ID});
+          `,
+        }}
+      />
+      {/* Google Tag Manager */}
       <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=UA-101882907-1" />
       <Script strategy="lazyOnload">
         {

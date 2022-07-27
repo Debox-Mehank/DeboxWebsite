@@ -97,7 +97,7 @@ const BrochurePamphlets = () => {
                 </h2>
 
                 <p className="mt-4 text-gray-600">
-                  Let your customers get acquainted and interact with your brand first hand because efficient spatial and interior branding makes your business experienceable. Be it wall designing, corner designing or even glass facade designing - let your space speak louder than your words.
+                  {"Let your space speak louder than words! Be it wall designing, corner designing or even glass facade designing - let your on-ground branding have that unique spark that not only has a vibe of its own but also lets you unify your online & offline brand experience."}
                 </p>
 
                 <div className='flex flex-col text-center md:gap-8 md:flex-row'>

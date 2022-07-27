@@ -164,7 +164,7 @@ const BrochurePamphlets = () => {
                                 </h2>
 
                                 <p className="mt-4 text-gray-600">
-                                    Market your business and standout with our unique and eye-catching brochures and pamphlets. Be it a tri-fold or a bi-fold, choose from a varied paper qualities to put your best foot forward for promoting your business.
+                                    Market your business on-ground and standout with our unique and eye-catching brochures and pamphlets. Be it a tri-fold or a bi-fold, choose from varied paper qualities to put your best foot forward for promoting your business.
                                 </p>
 
                                 <div className='flex flex-col text-center md:gap-8 md:flex-row'>

@@ -22,35 +22,35 @@ const options = [
     value: "carrybags"
   },
   {
-    label: "Biryani containers",
+    label: "Biryani Containers",
     value: "biryani-containers"
   },
   {
-    label: "Curry containers",
+    label: "Curry Containers",
     value: "curry-containers"
   },
   {
-    label: "Appetizer containers",
+    label: "Appetizer Containers",
     value: "appetizer-containers"
   },
   {
-    label: "Dessert containers",
+    label: "Dessert Containers",
     value: "dessert-containers"
   },
   {
-    label: "Ice-cream pints",
+    label: "Ice-cream Pints",
     value: "icecream-pints"
   },
   {
-    label: "Dosa containers",
+    label: "Dosa Containers",
     value: "dosa-containers"
   },
   {
-    label: "Salad bowl",
+    label: "Salad Bowl",
     value: "salad-bowl"
   },
   {
-    label: "Drink cups",
+    label: "Drink Cups",
     value: "drink-cups"
   },
   {
@@ -62,27 +62,27 @@ const options = [
     value: "noodle-box"
   },
   {
-    label: "Juice container",
+    label: "Juice Container",
     value: "juice-container"
   },
   {
-    label: "Takeaway bags",
+    label: "Takeaway Bags",
     value: "takeaway-bags"
   },
   {
-    label: "Thali packaging box/combo box",
+    label: "Thali Packaging box / Combo box",
     value: "thali-packaging-combo-box"
   },
   {
-    label: "Pizza box",
+    label: "Pizza Box",
     value: "pizza-box"
   },
   {
-    label: "Burger box",
+    label: "Burger Box",
     value: "burger-box"
   },
   {
-    label: "Bakery box",
+    label: "Bakery Box",
     value: "bakery-box"
   },
   {
@@ -102,7 +102,7 @@ const options = [
     value: "drink-bottles"
   },
   {
-    label: "Seal pouches",
+    label: "Seal Pouches",
     value: "seal-pouches"
   },
   {
@@ -192,7 +192,7 @@ const BrochurePamphlets = () => {
                 </h2>
 
                 <p className="mt-4 text-gray-600">
-                  Be it launching a new product or just giving your existing packaging a fresh feel. With our unique and out-of-the-box packaging ideas and designs, your customers are surely going to love the new touch that we will give to your business.
+                  Be it launching a new product or just giving your existing packaging a fresh feel, we’re here to bring your packaging to life! With our unique and creative designs, your customers are surely going to love the new touch we will give to your business.
                 </p>
 
                 <div className='flex flex-col text-center md:gap-8 md:flex-row'>
