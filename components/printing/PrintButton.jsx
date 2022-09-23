@@ -13,8 +13,8 @@ function PrintButton(props) {
     lg:mx-4 px-4 lg:px-10 lg:py-16 lg:text-2xl lg:-mt-4    
       "
       id="btn">
-      <div className=' lg:-mt-28 lg:mb-8 -ml-5  lg:mx-auto lg:h-24 lg:w-24 h-14 w-14 relative '>
-        <Image src={props.imgLink} layout="fill" />
+      <div className='lg:-mt-28 lg:mb-8 -ml-5 lg:mx-auto lg:h-24 lg:w-24 h-14 w-14 relative '>
+        <Image className='' src={props.imgLink} layout="fill" />
       </div>
 
       <div className='pl-3 lg:pl-0 '>

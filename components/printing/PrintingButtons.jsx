@@ -10,6 +10,9 @@ function PrintingButtons() {
     return (
         <div className="flex justify-center items-center flex-col px-3 py-1 xl:px-15 xl:py-1  select-none mt-4 ">
 
+            <div className='pb-6 md:hidden pt-3 font-bold text-xl tracking-tight'>
+                What are you here for?
+            </div>
 
             <div className="flex flex-col text-center gap-3 md:flex-row md:-mt-20">
                 <div onClick={() => { router.push("/printing/brochure-pamphlets#btn") }}>

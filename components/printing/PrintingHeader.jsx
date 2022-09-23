@@ -47,7 +47,7 @@ function PrintingHeader() {
         //     
         // </div>
         <div className=' bg-marketingBg pb-10'>
-            <div style={{ backgroundPosition: "0px center" }} className=' PrintHead mt-36 ' ref={banner} ></div>
+            <div style={{ backgroundPosition: "0px center" }} className=' PrintHead mt-28 md:mt-36' ref={banner} ></div>
 
             <PrintingButtons />
         </div>
