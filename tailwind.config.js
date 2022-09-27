@@ -1,3 +1,4 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -5,6 +6,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        sans: [`Montserrat`, ...defaultTheme.fontFamily.sans]
+      },
       colors: {
         primary: "#BF1E2E",
         secondary: "#D42133",
@@ -15,14 +19,14 @@ module.exports = {
         marketingBg: "#e0e0e0",
         greyButtonBg: "#afafaf",
         rose: colors.rose,
-        printingButton:"#fbfbfb",
-        printingRed:"#BF1E2ED1",
+        printingButton: "#fbfbfb",
+        printingRed: "#BF1E2ED1",
 
       },
       gridTemplateColumns: {
         essential: "70% 30%",
         contact: "60% 40%"
-      }
+      },
     },
   },
   variants: {
